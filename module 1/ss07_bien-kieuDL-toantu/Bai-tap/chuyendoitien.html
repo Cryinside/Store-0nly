@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+
+        <input type="text" id="ip_amount">
+        <select name="#" id="From_currency">
+            <option value="a">VND</option>
+            <option value="b">USD</option>
+            </select>
+
+        <select name="#" id="to_currency" >
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+        </select>
+        <button onclick="chuyendoitien()" >Convert</button></td>
+        <p id="ket_qua"></p>
+<script>
+
+    function chuyendoitien(){
+        let input=parseInt(document.getElementById('ip_amount').value);
+        let gt1=document.getElementById('From_currency').value;
+        let gt2=document.getElementById('to_currency').value;
+        const USD_rate = 23000;
+        if (gt1== 'a' &&gt2=='a'){
+            document.getElementById("ket_qua").innerHTML= 'VND = ' +input
+        }
+        if (gt1== 'b' &&gt2=='b'){
+            document.getElementById("ket_qua").innerHTML= 'USD = ' +input
+        }
+        if ( gt1=='a' && gt2=='b'){
+            document.getElementById('ket_qua').innerHTML= 'USD = ' + (input/USD_rate)
+        }
+        if ( gt1=='b' && gt2=='a'){
+            document.getElementById('ket_qua').innerHTML= 'VND = ' + (input*23000)
+        }
+
+
+    }
+</script>
+</body>
+</html>

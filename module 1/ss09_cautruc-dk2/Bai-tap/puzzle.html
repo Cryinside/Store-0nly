@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Game puzzle</title>
+    <style>
+        img{
+            width: 800px;
+            height: 160px;
+            margin-left: 260px;
+        }
+    </style>
+</head>
+<body>
+<img id="imga1" src="a1/monkey_part1x1.jpg" onclick="changepic()" alt="error" >
+<br>
+<img id="imga2" src="a1/monkey_part2x1.jpg" onclick="changepic1()" alt="error">
+<br>
+<img id="imga3" src="a1/monkey_part3x1.jpg" onclick="changepic2()" alt="error">
+<br>
+<img id="imga4" src="a1/monkey_part4x1.jpg" onclick="changepic3()" alt="error">
+<br>
+<img id="imga5" src="a1/monkey_part5x1.jpg" onclick="changepic4()" alt="error">
+<script>
+    function changepic() {
+        if (document.getElementById('imga1').src.endsWith("a1/monkey_part1x1.jpg")) {
+            document.getElementById('imga1').src="a2/panda_swap_part1x1.jpg"
+        }else if (document.getElementById('imga1').src.endsWith("a2/panda_swap_part1x1.jpg")){
+            document.getElementById('imga1').src="a3/funny-cat1_part1x1.jpg"
+        }else {
+            document.getElementById('imga1').src="a1/monkey_part1x1.jpg"
+        }
+    }
+
+    function changepic1() {
+        if (document.getElementById('imga2').src.endsWith("a1/monkey_part2x1.jpg")) {
+            document.getElementById('imga2').src="a2/panda_swap_part2x1.jpg"
+        }else if (document.getElementById('imga2').src.endsWith("a2/panda_swap_part2x1.jpg")){
+            document.getElementById('imga2').src="a3/funny-cat1_part2x1.jpg"
+        }else {
+            document.getElementById('imga2').src="a1/monkey_part2x1.jpg"
+        }
+    }
+
+    function changepic2() {
+        if (document.getElementById('imga3').src.endsWith("a1/monkey_part3x1.jpg")) {
+            document.getElementById('imga3').src="a2/panda_swap_part3x1.jpg"
+        }else if (document.getElementById('imga3').src.endsWith("a2/panda_swap_part3x1.jpg")){
+            document.getElementById('imga3').src="a3/funny-cat1_part3x1.jpg"
+        }else {
+            document.getElementById('imga3').src="a1/monkey_part3x1.jpg"
+        }
+    }
+
+    function changepic3() {
+        if (document.getElementById('imga4').src.endsWith("a1/monkey_part4x1.jpg")) {
+            document.getElementById('imga4').src="a2/panda_swap_part4x1.jpg"
+        }else if (document.getElementById('imga4').src.endsWith("a2/panda_swap_part4x1.jpg")){
+            document.getElementById('imga4').src="a3/funny-cat1_part4x1.jpg"
+        }else {
+            document.getElementById('imga4').src="a1/monkey_part4x1.jpg"
+        }
+    }
+
+    function changepic4() {
+        if (document.getElementById('imga5').src.endsWith("a1/monkey_part5x1.jpg")) {
+            document.getElementById('imga5').src="a2/panda_swap_part5x1.jpg"
+        }else if (document.getElementById('imga5').src.endsWith("a2/panda_swap_part5x1.jpg")){
+            document.getElementById('imga5').src="a3/funny-cat1_part5x1.jpg"
+        }else {
+            document.getElementById('imga5').src="a1/monkey_part5x1.jpg"
+        }
+    }
+
+</script>
+</body>
+</html>

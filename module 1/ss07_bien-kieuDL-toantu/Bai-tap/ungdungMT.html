@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<br>
+<button onclick="addition()">addition</button>
+<button onclick="subtraction()">subtraction</button>
+<button onclick="multiplication()">multiplication</button>
+<button onclick="division()">division</button>
+<p id="result"></p>
+
+<script>
+    let num1 = document.getElementById("num1");
+    let num2 = document.getElementById("num2");
+    function addition() {
+        let result = parseInt(num1.value) + parseInt(num2.value) ;
+        document.getElementById("result").innerText = "Result addition: " + result;
+    }
+    function subtraction() {
+        let result = parseInt(num1.value) - parseInt(num2.value) ;
+        document.getElementById("result").innerText = "Result addition: " + result;
+    }
+    function multiplication() {
+        let result = parseInt(num1.value) * parseInt(num2.value) ;
+        document.getElementById("result").innerText = "Result addition: " + result;
+    }
+    function division() {
+        let result = parseInt(num1.value) / parseInt(num2.value) ;
+        document.getElementById("result").innerText = "Result addition: " + result;
+    }
+</script>
+</body>
+</html>

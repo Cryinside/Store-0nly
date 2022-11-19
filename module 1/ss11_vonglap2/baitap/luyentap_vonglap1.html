@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 01</title>
+    <style>
+        button{
+            width: 150px;
+            height: 100px;
+            font-size: 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 600px;
+        }
+        button:hover{
+            background-color: rgb(182, 182, 182);
+        }
+        h2{
+            text-align: center;
+            font-family: Serif, Arial, "SFU Futura full";
+        }
+    </style>
+</head>
+<body>
+<!--bai1
+<script>
+    for ( let i=1 ; i<=100 ; i++){
+        document.write(i + ' ,' );
+        if (i==100){
+            alert('bạn đã hoàn thành');
+            break;
+        }
+    }
+</script>
+-->
+
+
+<!--bai2
+<script>
+    let nhietdo=prompt("Nhap vao nhiet do cua ban")
+    if(nhietdo>100)
+    {
+        alert("vui long ha nhiet do")
+
+    }
+    else (nhietdo<20)
+    {
+        alert("vui long tang nhiet do")
+    }
+</script>
+-->
+
+<!--bai3
+<script>
+    let n=parseInt(prompt('nhap n: '));
+    let f0 =0, f1=1, fn;
+    for (let i = 0 ; i < n ; i++){
+        if (n <= 1){
+            fn = i;
+        }else {
+            fn=f0+f1;
+            f0=f1;
+            f1=fn;
+        }
+        document.write(fn + ' ,')
+    }
+</script>
+-->
+
+
+<!--bai4
+<script>
+    let n=parseInt(prompt('nhap n: '));
+    let f0 =0, f1=1, fn;
+    for (let i = 0 ; i < n ; i++){
+        if (n <= 1){
+            fn = i;
+        }else {
+            fn=f0+f1;
+            f0=f1;
+            f1=fn;
+            if (fn % 5 == 0){
+                document.write('số đầu tiên chia hết cho 5 là:  ' +fn);
+                break;
+            }
+        }
+
+    }
+</script>
+-->
+
+<!--bai5
+<script>
+    let n=parseInt(prompt('nhap n: '));
+    let f0 =0, f1=1, fn;
+    let sum=0;
+    for (let i = 0 ; i < n ; i++){
+        if (n <= 1){
+            fn = i;
+        }else {
+            fn=f0+f1;
+            f0=f1;
+            f1=fn;
+            sum+=fn;
+        }
+
+    }
+    document.write('Tổng 20 số fibonacci đầu tiên là:  '+sum );
+</script>
+-->
+
+<!--bai6
+<script>
+    let count = 0, sum = 0, i=1;
+    while (count<=29){
+            if(i%7==0) {
+                sum+=i;
+                count+=1;
+        }
+            i++;
+    }
+    document.write(sum)
+</script>
+-->
+
+<!--bai7
+<script>
+    let count=1;
+    let text="";
+    for (; count<=100 ; count++){
+        if (count%3 == 0 && count%5 ==0){
+            text+='fizzBuzz <br>';
+        }
+        else if (count%3==0){
+                text+='fizz <br>';
+            }else if(count % 5 == 0){ //15
+            text += "Buzz <br>";
+        } else {
+            text += count + "<br>";
+        }
+    }
+    document.write(text);
+</script>
+-->
+<h2>CHÚC BẠN MAY MẮN. MỜI BẠN XƠI, CÙNG NHAU ĐOÁN SỐ</h2>
+<button type="button" onclick="start()"> START </button>
+<script>
+
+ function start(){
+     let from=parseInt(prompt('Số từ: '));
+     let to=parseInt(prompt('Đến số: '));
+     let check=true;
+     let comNun=Math.floor(Math.random()*(to-from+1))+from;
+     for (let i=0 ; i<4 ; i++){
+         let guess=parseInt(prompt('Mời bạn đoán: '));
+         if (guess === comNun){
+             alert('Bạn thắng');
+             check=false;
+             break;
+         }else if (guess > comNun){
+             alert('Số bạn nhập lớn hơn. Vui lòng nhập lại');
+         }else {
+             alert('Số bạn nhập nhỏ hơn. Vui lòng nhập lại');
+         }
+     }
+     if (check){
+         alert('Bạn thật hậu đậu');
+     }
+
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap cau truc if-else-if</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Who's there?");
+
+        if (userName=='Admin'){
+            let password=prompt("Nhap PASSWORD ban ei: ");
+            if(password == 'TheMaster'){
+                alert("Welcome ban nhe!!");
+            }else if (password = null){
+                alert("Canceled");
+            }else{
+                alert("Wrong psswd");
+            }
+        }else{
+            alert("I don't know you");
+        }
+    </script>
+</body>
+</html>

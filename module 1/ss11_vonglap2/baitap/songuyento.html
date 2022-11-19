@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let nums =prompt("Nhap vao so n: ")
+    if (nums>0){
+        let m=2;
+        let count=0
+        while (count<nums)
+        {
+            let kt=true;
+            for (let i=2;i<=Math.sqrt(m);i++)
+            {
+                if(m%i==0)
+                {
+                    kt=false;
+                    break;
+                }
+            }
+            if(kt)
+            {
+                document.write(m +" , " );
+                count++;
+            }
+            m++;
+        }
+    }
+    else {
+        alert("Nhap lai so n")
+    }
+
+
+</script>
+</body>
+</html>

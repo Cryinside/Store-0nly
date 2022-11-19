@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string=prompt('nhap chuoi: ');
+    let arrIp=string.split('').sort();
+    let check;
+    for (let i=0;i<arrIp.length;i++){
+        check=arrIp[i];
+        for (let j=i+1;j<arrIp.length;j++){
+            if (arrIp[j]===arrIp[i]){
+                arrIp.splice(j,1);
+            }
+        }
+    }
+    document.write("có "+arrIp.length+" phần tử khác nhau, các phần tử còn lại là "+arrIp);
+
+
+</script>
+</body>
+</html>

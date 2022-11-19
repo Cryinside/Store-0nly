@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border: 1px solid black " width="400" height="200"></canvas>
+<script>
+
+    class Rectangle{
+        constructor (width,height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea() {
+            return this.width*this.height;
+        }
+        getPerimeter() {
+            return 2*(this.width+this.height);
+        }
+        drawRect() {
+            let rect = document.getElementById('myCanvas').getContext('2d');
+            rect.fillStyle = 'blue';
+            rect.fillRect(50,50,this.width,this.height);
+        }
+        setChange(newWidth,newHeight) {
+            this.width = newWidth;
+            this.height = newHeight;
+        }
+    }
+    let myRect = new Rectangle(20,20);
+    myRect.drawRect();
+    myRect.setChange(100,50);
+    let a = myRect.getArea();
+    console.log(a);
+    let p = myRect.getPerimeter();
+    console.log(p);
+
+</script>
+</body>
+</html>

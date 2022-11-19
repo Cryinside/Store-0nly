@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Vòng tròn vui nhộn</title>
+
+</head>
+<body>
+<canvas id="myCanvas" width="1368" height="768" style="border: 1px solid #d3d3d3"></canvas>
+
+<script >
+    // let c = document.getElementById('mycanvas');
+    // let circle = c.getContext('2d');
+    // circle.beginPath();
+    // circle.arc(50,50,40,0,2*Math.PI);
+    // circle.strokeStyle = 'red';
+    // circle.stroke();
+
+    //Khai báo lớp hình tròn
+    function Circle(x,y,radius){
+        this.x=x;
+        this.y=y;
+        this.radius=radius;
+    }
+
+    function getRandomHex(){
+        return Math.floor(Math.random()*255)
+    }
+    function gerRandomColor(){
+        var red=getRandomHex();
+        var green=getRandomHex();
+        var blue=getRandomHex();
+            return 'rgb('+red+','+blue+','+green+')';
+    }
+    function createCircle(){
+        var ctx=document.getElementById('myCanvas').getContext('2d');
+        var radius=Math.floor(Math.random()*80);
+        var color=gerRandomColor();
+        var x=Math.random()*window.innerWidth;
+        var y=Math.random()*window.innerHeight;
+        var circle=new Circle(x,y,radius);
+        ctx.beginPath();
+        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.fillStyle=color;
+        ctx.fill();
+    }
+    setInterval(function () {
+        var canvas=document.getElementById('myCanvas');
+        var context=canvas.getContext('2d');
+        context.clearRect(0,0,canvas.clientWidth,canvas.clientHeight)
+        createCircle();
+        this.x+=2;
+        this.y+=2;
+    },300)
+
+    function createMultipleCircle(){
+        for (var i=0 ; i<30 ; i++){
+            createCircle();
+        }
+    }
+createMultipleCircle();
+
+
+
+
+</script>
+</body>
+</html>

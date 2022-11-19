@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAO FORM CO BAN</title>
+</head>
+<body>
+
+  <form action="simpleform.html" method="get" class = "wufoo">
+      <h2 style="color: royalblue">Order Form</h2>
+      <p>What would you like to buy?</p>
+
+      <select>
+          <option value = "  ">A</option>
+          <option>B (+  0.5$)</option>
+          <option>C (+  0.5$)</option>
+      </select>
+
+      <!--order-->
+
+      <p>How many would you like to order?</p>
+      <input type="radio" name="rd"/> 1 - $10 <br/>
+      <input type="radio" name="rd"/> 2 - $20 <br/>
+      <input type="radio" name="rd"/> 3 - $25 <br/>
+
+      <!--input name-->
+
+      <p>Name <sup style="color: red">*</sup> </p>
+      <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+      <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+
+      <!--input email-->
+
+      <p>Email <sup style="color: red">*</sup></p>
+      <input type = "text" name="email" size="35"/>
+
+      <!--input number-->
+
+      <p>Phone Number <sup style="color: red">*</sup></p>
+      <input type = "text" name="phone1" size="5"/> -
+      <input type = "text" name="phone2" size="5"/> -
+      <input type = "text" name="phone3" size="5"/>
+
+    <!--nut submit-->
+      <p><input type = "button" name="btSubmit" value="Submit"/></p>
+  </form>
+
+  <!--tao style toan bo form-->
+
+  <style>
+      .wufoo {
+          font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+      }
+  </style>
+
+</body>
+
+</html>

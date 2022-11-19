@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ip=[
+        [1, 2, 1],
+        [7, 4, 28],
+        [3, 10, 26]
+    ];
+    processData(ip)
+    function processData(input) {
+        var rightDia = 0;
+        var leftDia = 0;
+        var inputArray = input.split('')
+        var squareSize = parseInt(inputArray.shift() - 1);
+        for (var i = 0; i < inputArray.length; i++) {
+            var row = inputArray[i].split(" ");
+            rightDia += parseInt(row[i]);
+            leftDia += parseInt(row[squareSize]);
+            squareSize--;
+        }
+        console.log(Math.abs(rightDia - leftDia));
+    }
+</script>
+</body>
+</html>

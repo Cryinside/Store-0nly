@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<!--
+<script>
+    function alertMessage(mess){
+        alert(mess)
+    }
+    alertMessage('xin chao')
+</script>
+-->
+<!--
+<script>
+    function argument(num){
+        num++;
+        return num;
+    }
+   let n=parseInt(prompt('nhap n: '));
+    let m=argument(n);
+    alert(m);
+</script>
+-->
+<!--
+<script>
+    function argument(a,b){
+        if(a>b){
+            alert('a lon hon b')
+        }else {
+            return a+b;
+        }
+    }
+    alert(argument(3,3));
+</script>
+-->
+
+<!--
+<script>
+    function addNums(){
+        let firstNum = 4;
+        let secondNum = 8;
+        let result = firstNum + secondNum;
+        alert(result)
+        return result;
+    }
+    result=0;
+    result=addNums();
+
+
+</script>
+-->
+
+<!---->
+<script>
+    let arr1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus" ];
+    let arr2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+    var search=prompt('tim: ');
+
+    function searchArr(){
+        let result = '';
+        let keyword=search;
+        let index=arr1.indexOf(keyword)
+        if (index != -1){
+            result = arr2[index];
+        }else {
+            result='Not found!!';
+        }
+        return result;
+    }
+
+    document.write(searchArr())
+</script>
+</body>
+</html>

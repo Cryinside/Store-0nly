@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Từ điển</title>
+</head>
+<body>
+<input type="text" id="gtri" >
+<button type="button" onclick="search()">Translate</button>
+<p id="result"></p>
+<script>
+    let US=['people','house','cat','dog','white'];
+    let VN=['con người','nhà','con mèo','con chó','màu trắng'];
+    function search(){
+        let result="";
+        let key=document.getElementById('gtri').value;
+        let index=US.indexOf(key);
+        if (index!=1){
+            result=VN[index];
+        }else {
+            result='không tìm thấy';
+        }
+document.getElementById('result').innerText=result;
+
+    }
+</script>
+</body>
+</html>

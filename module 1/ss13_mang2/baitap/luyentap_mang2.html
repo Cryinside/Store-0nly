@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1
+    <script>
+        let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+        ];
+
+        for(let i=0;i<a.length;i++){
+        console.log("row"+i)
+            for(let j=0;j<a[i].length;j++){
+        console.log(a[i][j])
+    }
+
+    }
+        // a.forEach((value,i)=>{
+    //     console.log('row'+i)
+    //     value.forEach((b)=>{
+    //         console.log(b)
+    //     })
+    // })
+</script>
+-->
+
+<!--bai2
+    <script>
+        let arr= [ 'c', 's', 'c', '2', '6', '1' ]
+
+        document.write(arr.reverse().join(''))
+
+
+    </script>
+    -->
+
+<!--bai3
+
+<script>
+    let arr= ['h','pro',2,7,3,2,0,2];
+    let count=0;
+    for (let i=0 ; i<arr.length ; i++){
+        if (typeof arr[i] === 'number')
+            count++;
+    }
+    document.write('co '+count+' ki tu trong mang')
+</script>
+-->
+
+<!--&lt;!&ndash;bai4-->
+
+<script>
+    let arr= ['hieufunny','chinh','la','anh'];
+    let arr2=arr.join('')
+    let count=0;
+
+      for (let i=0 ; i<arr2.length ; i++){
+          count++;
+      }
+    document.write('co '+count+' tu trong chuoi ')
+</script>
+-->
+
+
+<!--bai5
+<script>
+    let string1 = prompt('string 1:');
+    let string2 = prompt('string 2:');
+    let Array1 = string1.split(/[!,.,?,@]/);
+    let Array2 = string2.split(/[!,.,?,@]/);
+    let kt = 0;
+
+
+    if(Array1.length != Array2.length) {
+        document.write('Hai chuỗi nhập vào khác nhau')
+    }else{
+        for(let i=0;i<Array1.length;i++){
+            if(Array1[i]!== Array2[i]) {
+                kt =1;
+                break;
+            }
+        }
+        if (kt==1) {
+            document.write('Hai chuỗi nhập vào khác nhau')
+        }else{
+            document.write('Hai chuỗi nhập vào giống nhau');
+        }
+    }
+
+</script>
+-->
+
+<!--bai6
+<script>
+   let arr=[];
+   let n=parseInt(prompt('nhap so luong phan tu: '));
+   for (let i=0 ; i<n ; i++){
+       let ele=prompt('phan tu thu '+i);
+       arr.push(ele);
+   }
+let kt=1
+   for (let i=0 ; i<arr.length ; i++){
+       if (arr[i]===' - '){
+           arr.splice(i,1,' _ ');
+           kt=0;
+       }
+   }
+   if (kt==1){
+       alert('Not found')
+   }else {
+    document.write(arr);
+   }
+-->
+</script>
+</body>
+</html>

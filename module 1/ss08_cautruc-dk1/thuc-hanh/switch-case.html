@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch-case</title>
+</head>
+<body>
+
+<!-- bai1 -->
+
+<script>
+    let browser=prompt("Please type your browser: ");
+    switch (browser){
+        case 'Edge':
+            alert("You've got the Edge!");
+            break;
+        case 'Chrome':
+        case 'Firefox':
+        case 'Safari':
+        case 'Opera':
+            alert('Okay we support these browsers too');
+            break;
+        default:
+            alert('We hope that this page looks ok!');
+    }
+</script>
+
+<!-- bai2 -->
+
+<script>
+    let a = prompt('a?', '');
+    switch (a) {
+        case 0:
+            alert(0);
+            break;
+        case 1:
+            alert(1);
+            break;
+        case 2:
+        case 3:
+            alert('2,3');
+            break;
+    }
+</script>
+
+<!-- bai3: TH1: IF...ELSE -->
+
+<script>
+    let value = prompt('Type a number', 0);
+    if (value > 0) {
+        alert(1);
+    } else if (value < 0) {
+        alert(-1);
+    } else {
+        alert(0);
+    }
+</script>
+
+<!-- bai3 : TH2: SWITCH-CASE-->
+
+<script>
+    let value = prompt('Type a number', 0);
+    let gt= value >0;
+    switch (gt){
+        case true:
+            document.write(1)
+            break;
+        case false:
+            let gt1=value<0;
+            switch (gt1) {
+                case true:
+                    document.write(-1);
+                    break;
+                case false:
+                    document.write(0);
+                    break;
+            }
+    }
+</script>
+
+
+</body>
+</html>

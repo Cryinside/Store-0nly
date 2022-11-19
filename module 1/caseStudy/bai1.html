@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let row=parseInt(prompt('so hang: '));
+let col=prompt('so cot: ');
+    for (let i=1 ; i<=row ; i++){
+        if (i==1 || i==row){
+            for (let j=1 ; j<=col ; j++){
+                document.write('* ');
+            }
+        }else {
+            document.write('* ');
+            for (let i=1; i<=col-2 ; i++){
+                document.write(' &nbsp;&nbsp; ');
+            }
+            document.write(' * ');
+        }
+        document.write(" <br> ");
+
+    }
+</script>
+</body>
+</html>

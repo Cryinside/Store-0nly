@@ -1,0 +1,5 @@
+
+Name: hieu, Email: hieu123Gender: nam ID Customer: hieu111, Phone: 09023142
+Name: khai, Email: ahw12, Gender: nam, ID Customer: 2703, Phone: 09023
+Name: thao, Email: thao22, Gender: nu, ID Customer: thao1, Phone: 0902323
+Name: hieu, Email: hieu123@, Gender: nam, ID Customer: 111, Phone: 09023139

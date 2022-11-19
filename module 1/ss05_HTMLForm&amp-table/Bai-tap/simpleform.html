@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>[BT] TAO FORM DON GIAN</title>
+    <style>
+        .a{
+            text-align: center;
+        }
+        .mau {
+            color: royalblue;
+            font-family: Arial;
+        }
+        .mau1 {
+            color: orange;
+            font-family: "Times New Roman";
+        }
+        table{
+            background-color: #fdfca8;color:#0837fd;font-family: "Lucida Sans";
+        }
+        th{
+            background-color: #d3fcd5;color: #0837fd;font-family: "Lucida Sans";
+        }
+        .a{
+            text-align: center;
+        }
+        .all{
+            margin-inline: 150px;
+            margin-block: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+            <!--form1 -->
+<div class="all">
+<fieldset  style="width: 400px" >
+    <h3 style="background: darkorange" class="a"><span style="color: aliceblue">SỞ THÍCH CỦA BẠN</span></h3>
+    <form name="form1" class="a" action="simpleform.html " method="get">
+        <table>
+
+            <tr>
+
+                <td class="mau"><label for="name" >Họ và tên:</label></td>
+                <td><input name="yourname" id="name" type="text"></td>
+
+            </tr>
+            <tr>
+
+                <td class="mau"><label for="email">Email:</label></td>
+                <td><input name="email" type="email"></td>
+
+            </tr>
+            <tr>
+                <td class="mau"> <label for="hobby">Sở thích:</label></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="mau1"> <input name="the_thao"  type="checkbox"/> Thể thao</td>
+                            <td class="mau1"> <input name="am_nhac"  type="checkbox"/> Âm nhạc</td>
+                            <td class="mau1"> <input name="doc_sach"  type="checkbox"/> Đọc sách</td>
+                        </tr>
+
+                        <tr>
+                            <td class="mau1"> <input name="luot_web"  type="checkbox"/> Lướt web</td>
+                            <td class="mau1"> <input name="choi_game"  type="checkbox"/> Chơi game</td>
+                            <td class="mau1"> <input name="dien_anh"  type="checkbox"/> Điện ảnh</td>
+                        </tr>
+
+                        <tr>
+                            <td class="mau1"> <input name="du_lich" id="hobby" type="checkbox"/> Du lịch</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="a">
+                        <input type="submit" value="Gửi đăng ký">
+                        <input type="reset" value="Nhập lại">
+                        </div>
+                    </td>
+                </tr>
+
+        </table>
+    </form>
+</fieldset>
+</div>
+            <br><br><br><br>
+
+
+            <!--form2 -->
+<form name="form2" action="simpleform.html" method="post">
+<table>
+
+        <tr>
+            <th colspan="2" >ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td><label for="yname">Họ và tên: </label> </td>
+            <td><input name="yname" id="yname" type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="date">Ngày sinh: </label> </td>
+            <td><input name="date" id="date" type="date"></td>
+        </tr>
+        <tr>
+            <td><label>Giới tính: </label> </td>
+            <td><input name="gender" id="nam" type="radio"><label for="nam">Nam</label>
+                <input name="gender" id="nu" type="radio"><label for="nu">Nữ</label>
+                <input name="gender" id="LGBT" type="radio"><label for="LGBT">LGBT</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Địa chỉ: </td>
+            <td><textarea cols="30" rows="3" placeholder="nhập địa chỉ của bạn ở đây"></textarea></td>
+        </tr>
+
+        <tr>
+        <td>Lớp: </td>
+        <td>
+            <select>
+                <option >---Chọn lớp---</option>
+                <option selected>A1121i1</option>
+            </select>
+        </td>
+        </tr>
+
+        <tr>
+            <td><label for="Email">Email: </label> </td>
+            <td><input name="Email" id="Email" type="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="dth">Điện thoại: </label> </td>
+            <td><input name="dth" id="dth" type="tel"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button></td>
+
+        </tr>
+</table>
+</form>
+</body>
+</html>

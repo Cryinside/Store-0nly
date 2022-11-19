@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     let height=parseInt(prompt('chieu cao: '));
+    // for (let i=1 ; i<=height ; i++){
+    //     if (i==height-2){
+    //         document.write(' * ')
+    //         for (let j=1 ; j<=i-2 ; j++){
+    //             document.write('&nbsp;&nbsp;&nbsp;')
+    //         }
+    //         document.write(' * ')
+    //     }else if (i==height-1){
+    //         document.write(' * ')
+    //         for (let j=1 ; j<=i-2 ; j++){
+    //             document.write('&nbsp;&nbsp;&nbsp;')
+    //         }
+    //         document.write(' * ')
+    //     }else {
+    //         for (j=1 ; j<=i ; j++){
+    //             document.write(' * ');
+    //         }
+    //     }
+    //     document.write('<br>');
+    // }
+    // document.write('<br>');
+     let shape=''
+    for (let i=1 ; i<=height ; i++){
+        for (let j=1 ; j<=height ; j++){
+            if (i===height){
+                shape+='*'
+            }else if (j===1 || j===i){
+                shape+='*'
+            }
+        }
+        shape+='<br>';
+    }
+    document.write(shape);
+</script>
+</body>
+</html>

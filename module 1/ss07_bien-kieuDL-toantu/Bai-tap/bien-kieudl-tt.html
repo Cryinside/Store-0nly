@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> BAI TAP </title>
+</head>
+<body>
+
+    <!--bai1:  Diem trung binh-->
+
+    <script>
+        let toan, ly, hoa;
+        toan = prompt("Toan =");
+        ly = prompt("ly =");
+        hoa = prompt("hoa =");
+
+        let itoan=parseFloat(toan);
+        let ily=parseFloat(ly);
+        let ihoa=parseFloat(hoa);
+
+        let iDtb=(itoan+ily+ihoa)/3
+
+
+        document.write("Điểm trung bình = " + iDtb);
+    </script>
+    <br>
+
+    <!-- bai2: chuyen do C sang do F -->
+
+    <script>
+        let nhietdo;
+        nhietdo = prompt("nhap nhiet do C: ");
+        let inhietdo = parseFloat(nhietdo);
+        let F= (9*inhietdo)/5 +32
+        document.write('Chuyen sang do F:' +F);
+    </script>
+    <br>
+    <!-- bai3: Dien tich htron -->
+    <script>
+        let R;
+        R= prompt("Ban kinh:")
+        let iR=parseFloat(R);
+        const PI=3.14;
+        let S= iR*iR*PI;
+        document.write('Dien tich hinh tron =' +S);
+    </script>
+    <br>
+    <!-- bai4: Cvi htron -->
+
+    <script>
+        let r;
+        r= prompt("Ban kinh:")
+        let ir=parseFloat(r);
+        const PI=3.14;
+        let cv= 2*ir*PI;
+        document.write('Cvi hinh tron =' +cv);
+    </script>
+</body>
+</html>

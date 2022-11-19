@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let array1=[7,2,5,3,5,3];
+    // let array2=[7,2,5,4,6,3,5,3];
+
+
+    // var filtered = array2.filter(
+    //     function(find) {
+    //         return this.indexOf(find) > 0;
+    //     },
+    //     array1
+    // );
+    // console.log(filtered);
+
+
+    // function missingValue(a1, a2) {
+    //
+    //     var a = [], diff = [];
+    //
+    //     for (var i = 0; i < a1.length; i++) {
+    //         a[a1[i]] = true;
+    //     }
+    //
+    //     for (var i = 0; i < a2.length; i++) {
+    //         if (a[a2[i]]) {
+    //             delete a[a2[i]];
+    //         } else {
+    //             a[a2[i]] = true;
+    //         }
+    //     }
+    //
+    //     for (var k in a) {
+    //         diff.push(k);
+    //     }
+    //
+    //     return diff;
+    // }
+
+    //console.log(missingValue(array1,array2))
+    let arrA=[];
+    let arrB=[];
+    let res=[];
+    let sizeA=parseInt(prompt('nhap vao do dai mang A: '));
+    let sizeB=parseInt(prompt('nhap vao do dai mang B: '));
+    for (let i=0;i<sizeA;i++){
+        arrA.push(parseInt(prompt('so nguyen thu '+i+' trong mang A: ')))
+    }
+    for (let i=0;i<sizeB;i++){
+        arrB.push(parseInt(prompt('so nguyen thu '+i+' trong mang B: ')))
+    }
+    for (let i=0;i<sizeB;i++){
+        if (arrA.indexOf(arrB)===-1 && res.indexOf(arrB[i])===-1){
+            res.push(arrB[i]);
+        }
+    }
+    res.sort(function (a,b) {
+        return a-b;
+    });
+    alert('Mang A: '+arrA+'\n'+'Mang B: '+arrB+'\nCac so nguyen xuat hien trong mang B nhung khong co trong A: '+res);
+
+
+</script>
+</body>
+</html>

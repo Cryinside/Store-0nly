@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+let num1=parseInt(prompt('nhap va so so nguyen duong 1: '));
+let num2=parseInt(prompt('nhap va so so nguyen duong 2: '));
+
+function hamSoThanThiet(a){
+    let sum=0;
+    for (let i=0;i<a;i++) {
+        if (a % i == 0) {
+            sum+=i;
+        }
+    }
+    return sum;
+}
+if (hamSoThanThiet(num1)==num2 &&hamSoThanThiet(num2)==num1){
+    alert('true')
+}else {
+    alert('false');
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>

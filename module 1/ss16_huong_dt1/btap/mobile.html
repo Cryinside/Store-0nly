@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>NOKIA 1570 Pro Min:  <span id="pin1"></span></td>
+        <td>IPHONE 13 Pro Max:  <span id="pin2"></span></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="nokia1">
+            <button onclick="nokiaSendIphone()">Send</button>
+        </td>
+        <td>
+            <input type="text" id="iphone1">
+            <button onclick="iphoneSendNokia()">Send</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="box1">Tin nhắn của NOKIA</td>
+        <td id="box2">Tin nhắn của IPHONE</td>
+    </tr>
+</table>
+
+<script>
+    class Mobile {
+        constructor(namePhone,status) {
+            this.namePhone=namePhone;
+            this.battery=100;
+            this.messDraft='';
+            this.inbox=[];
+            this.outbox=[]
+            this.status=status;
+        }
+        checkStatus(){
+            return this.status;
+        }
+        onOff(){
+            this.status=!this.status;
+        }
+        writingMess(text){
+            this.messDraft=text;
+            this.battery--
+        }
+        sendMess(otherPhone){
+            //this: dien thoai hien tai
+            //otherPhone: dien thoai khac
+            //1.chuyen tin nhan nhap cua this-->hop thu den cua otherPhone
+            otherPhone.inbox.push(this.messDraft)
+            //2.chuyen tin nhan nhap cua this-->hop thu da gui cua this
+            this.outbox.push(this.messDraft);
+            //3.xoa nhap
+            this.messDraft='';
+            this.battery--
+        }
+        seenInbox(){
+            this.battery--
+            return this.inbox;
+        }
+        seenOutbox(){
+            if (this.status){
+                this.battery--
+                return this.outbox;
+            }
+        }
+        showMessInbox(){
+            if (this.status){
+                for (let i=0; i<this.inbox.length ; i++){
+                    document.write('Tin nhan gui den '+'<br>')
+                    document.write(i+1+'. '+this.inbox[i]+'<br>'+'<br>')
+                    this.battery--
+                }
+            }else {
+                alert('Vui long, bật điện thoại ')
+            }
+
+        }
+        showMessOutbox(){
+            if (this.status){
+                for (let i=0; i<this.outbox.length ; i++){
+                    document.write('Tin nhan gui di '+'<br>')
+                    document.write(i+1+'. '+this.outbox[i]+'<br>'+'<br>')
+                    this.battery--
+                }
+            }else {
+                alert('Vui long, bật điện thoại')
+            }
+
+        }
+
+
+    }
+    let nokia=new Mobile('Hieu',false);
+    let iphone=new Mobile('Khai',true);
+    nokia.onOff();
+    // document.getElementById('pin1').innerHTML=nokia.battery+' %';
+    // document.getElementById('pin2').innerHTML=iphone.battery+' %';
+    // nokia.writingMess('alo');
+    // nokia.sendMess(iphone)
+    // nokia.onOff();
+    // iphone.writingMess('cai chi em');
+    // iphone.sendMess(nokia);
+    //
+    //
+    //
+    // document.write('Nokia: '+nokia.battery+' %'+'<br>')
+    // nokia.showMessInbox();
+    // nokia.showMessOutbox();
+    //
+    //
+    //
+    //
+    // document.write('Iphone: '+iphone.battery+' %'+'<br>')
+    // iphone.showMessInbox();
+    // iphone.showMessOutbox();
+
+    function nokiaSendIphone(){
+        let messNokia=document.getElementById('nokia1').value;
+        nokia.writingMess(messNokia);
+        nokia.sendMess(iphone);
+        let sentIp=iphone.inbox.join(' ');
+        document.getElementById('box2').innerText=sentIp;
+    }
+
+    function iphoneSendNokia(){
+        let messIphone=document.getElementById('iphone1').value;
+        iphone.writingMess(messIphone);
+        iphone.sendMess(nokia);
+        let sendNoki=nokia.inbox.join(' ');
+        document.getElementById('box1').innerText=sendNoki;
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@font-face {
+    src: url(font/times.ttf);
+    font-family: time;
+}
+.font-1{
+    font-family: time;
+}

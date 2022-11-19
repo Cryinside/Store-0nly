@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Sử dụng vòng lặp for</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    let text="";
+    for (let i=0 ; i<5 ; i++){
+        text+="the number " + i +"<br>";
+    }
+    document.getElementById('demo').innerHTML= text;
+</script>
+
+
+<script>
+    let sum=0;
+    let i=1;
+    let num=parseInt(prompt("Nhâp số bk > 0: "));
+    for (; i <= num ; i++){
+        sum+=i;
+    }
+    document.getElementById('demo1').innerHTML= "Sum = "+sum;
+</script>
+
+<script>
+    let s=0;
+    let num=parseInt(prompt('nhập số: '));
+    while ( num != -1){
+        num=parseInt(prompt('nhập số: '));
+        alert(num)
+        s+=num;
+    }
+    alert(s);
+</script>
+</body>
+</html>

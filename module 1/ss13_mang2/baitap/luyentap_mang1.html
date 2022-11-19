@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[* Bài tập] Luyện mảng 01</title>
+</head>
+<body>
+<!--bai1
+<script>
+    let array= [1,43,2,10,3,12,6,4,7,22];
+    for (let i=0 ; i<array.length ; i++){
+       if (array[i]>10 || array[i]==10){
+           document.write(array[i]+' ,');
+       }
+    }
+</script>
+-->
+
+
+<!--bai2
+<script>
+    let arr=[];
+    let count=0;
+    for (let i=0; i<10; i++) {
+        arr[i] = parseInt(prompt("nhập phần tử arr["+i+"]"));
+    }
+
+    let max=arr[0];
+    for (let i=0; i<10; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            count =i;
+        }
+    }
+    document.write("Max number: "+ max +"<br>");
+    document.write("Position_index: "+count);
+</script>
+-->
+
+
+<!--bai3
+<script>
+    let index=parseInt(prompt("index: "));
+    let arr=new Array(index);
+    let sum=0;
+    for (let i=0; i<arr.length; i++) {
+        arr[i]=parseInt(prompt("enter the element: arr["+i+"]"));
+    }
+
+    let max=arr[0];
+    for(let i=0; i<arr.length; i++) {
+        sum+=arr[i];
+        if(arr[i]>max) {
+            max=arr[i];
+        }
+    }
+    let average=sum/arr.length;
+    document.write("Max number: "+max+"<br>");
+    document.write(("Average of array: "+average));
+</script>
+-->
+
+<!--bai4
+<script>
+    let index=parseInt(prompt("index: "));
+    let arr=new Array(index);
+    for (let i=0; i<arr.length; i++) {
+        arr[i]=parseInt(prompt("enter the element: arr["+i+"]"));
+    }
+    for(let i=0; i<arr.length/2; i++) {
+        let temp=arr[i];
+        arr[i]=arr[arr.length-i-1];
+        arr[arr.length-i-1]=temp;
+
+    }
+    for(let i=0; i<arr.length; i++){
+        document.write(arr[i]);
+    }
+</script>
+-->
+<!--bai5
+<script>
+    let index=parseInt(prompt("index:"));
+    let arr=new Array(index);
+    for (let i=0; i<arr.length; i++) {
+        arr[i]=parseInt(prompt("enter the element: arr["+i+"]"));
+    }
+    document.write(arr+"<br>");
+    for (let i=0; i<arr.length; i++) {
+            if(arr[i]<0) {
+                document.write("số nguyên âm là: "+arr[i]+"<br>");
+            }
+    }
+</script>
+-->
+
+<!--bai6
+<script>
+    let index=parseInt(prompt('index:'));
+    let arr=new Array(index);
+    for (let i=0 ; i<arr.length ; i++){
+        arr[i]=prompt('phần tử arr['+i+']');
+        document.write(arr[i]+' ,');
+    }
+    document.write('<br>');
+    let V=parseInt(prompt('nhap 1 số bất kì:'))
+    let find=arr.indexOf(V);
+        if (find!==1){
+            document.write(V+"is not in the Array");
+        } else {
+            document.write(V+"in the Array");
+        }
+</script>
+-->
+<!--bai7
+<script>
+    let arr=[]
+    let n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++){
+        let arr1=parseInt(prompt("phan tu "+i))
+        arr.push(arr1)
+    }
+    let num=parseInt(prompt("Nhap phan tu can tim"))
+    document.write(arr+'<br>')
+    if(arr.indexOf(num)>0) {
+
+
+        document.write(" So can tim  "+arr.splice(arr.indexOf(num), 1) + "<br>")
+    }
+    else{
+        document.write("khong co")
+    }
+    document.write("Mang moi : "+arr)
+</script>
+-->
+<!--bai7
+<script>
+    let arr=[]
+    let n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++){
+        let arr1=parseInt(prompt("phan tu "+i))
+
+
+        arr.push(arr1)
+
+
+    }
+    let res=arr.sort(index)
+    function index(a,b) {
+        return a - b;
+    }
+    document.write(res)
+
+</script>
+-->
+<!--bai7
+<script>
+    let arr=[]
+    let n=parseInt(prompt("Nhap vao so luong mang a"))
+    for (let i=0;i<n;i++){
+        let ele=parseInt(prompt("phan tu "+i))
+
+
+        arr.push(ele)
+
+
+    }
+    let arr1=[]
+    let m=parseInt(prompt("Nhap vao so luong mang b"))
+    for (let i=0;i<m;i++){
+        let ele1=parseInt(prompt("phan tu "+i))
+
+
+        arr1.push(ele1)
+
+
+    }
+    arr2=[1,2,3,4,5,6,7,8,9,10,11,12,13,15]
+    document.write(" Mang c moi "+arr2.concat(arr.concat(arr1)))
+
+
+</script>
+-->
+</body>
+</html>

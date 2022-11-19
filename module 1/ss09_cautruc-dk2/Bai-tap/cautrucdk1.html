@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+
+<!--bai1-->
+
+<script>
+    let a=parseInt(prompt('nhap a:'));
+    let b=parseInt(prompt('nhap b:'));
+
+    if(a%b==0) {
+        alert('a chia hết cho b');
+    } else {
+        alert('a không chia hết cho b');
+    }
+</script>
+
+<!--bai2-->
+<script>
+    let age=prompt('nhap so tuoi: ');
+    if (age <16){
+        alert('chưa đủ tuổi nghe em');
+    }else{
+        alert('Chúc mừng em');
+    }
+</script>
+
+<!--bai3-->
+
+<script>
+    let num=parseInt(prompt('nhap so nguyen: '));
+    if (num>0){
+        alert('Đây là số lớn hơn 0');
+    }else {
+        alert('Đây là số nhỏ hơn 0');
+    }
+</script>
+
+<!--bai4-->
+
+<script>
+    let a=parseInt(prompt('Nhập số nguyên a'));
+    let b=parseInt(prompt('Nhập số nguyên b'));
+    let c=parseInt(prompt('Nhập số nguyên c'));
+    let max=a;
+    if(b>max) {
+        max = b;
+    }
+    if(c>max) {
+        max = c;
+    }
+    alert('Số lớn nhất là: '+max);
+
+</script>
+
+<!--bai5-->
+
+<script>
+    let diemBaiKiemTra=parseFloat(prompt('nhập số điểm bài kiểm tra: '));
+    let diemGiuaKi=parseFloat(prompt('nhập số điểm thi giữa kì: '));
+    let diemCuoiKi=parseFloat(prompt('nhập số điểm thi cuối kì: '));
+    let trungBinhMon=(diemBaiKiemTra+diemGiuaKi+diemCuoiKi)/3;
+    if(trungBinhMon>=9) {
+        alert('Bạn xếp loại Giỏi');
+    } else if(trungBinhMon>=7) {
+        alert('Bạn xếp loại Khá');
+    } else if(trungBinhMon>=5) {
+        alert('Bạn xếp loại Trung bình');
+    } else {
+        alert('Bạn xếp loại yếu');
+    }
+</script>
+
+<!--bai6-->
+
+<script>
+    let doanhSoBanHang=parseFloat(prompt('nhập doanh số bán hàng lớn hơn 0'));
+    if (doanhSoBanHang>=10) {
+        hoaHong=(doanhSoBanHang/100)*20;
+    } else if(doanhSoBanHang>=5) {
+        hoaHong=(doanhSoBanHang/100)*15;
+    } else {
+        hoaHong=(doanhSoBanHang/100)*5;
+    }
+    alert('só tiền hoa hồng nhận được là: '+ hoaHong);
+
+</script>
+
+
+<!--bai7-->
+
+<script>
+    let soPhut=parseFloat(prompt('nhập số phút gọi điện: '));
+    if(soPhut>=10){
+        tienDienThoai=soPhut*3000;
+    } else {
+        tienDienThoai=soPhut*2500;
+    }
+    alert('số tiền điện thoại của tháng đó là: '+tienDienThoai+'VND');
+</script>
+</body>
+</html>

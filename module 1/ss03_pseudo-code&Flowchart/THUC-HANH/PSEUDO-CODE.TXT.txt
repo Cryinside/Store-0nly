@@ -1,0 +1,22 @@
+BAI 1:
+BEGIN
+
+  INPUT C
+  F = (9*C)/5 +32
+  DISPLAY F
+
+END
+
+
+BAI 2:
+BEGIN   
+
+  INPUT N, M
+	// N LA SO DUOC SINH NGUA NHIEN 0-9
+  IF ( N == M )
+   DISPLAY "DU DOAN DUNG"
+  ELSE
+   DISPLAY "DU DOAN SAI"
+  END IF
+
+END

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tic tac toe</title>
+    <style>
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h3>Tic tac toe</h3>
+<p id="board"></p>
+<script>
+    let board = document.getElementById("board");
+    let arr = [];
+    let data = "";
+    let checkPlayer = true;
+
+    function addArray(array) {
+        for (let i = 0; i < 5; i++) {
+            array[i] = Array("", "", "", "", "");
+        }
+    }
+
+    function displayBoard() {
+        data = "<table border='1'>";
+        for (let i = 0; i < 5; i++) {
+            data += "<tr>";
+            for (let j = 0; j < 5; j++) {
+                data += "<td onclick='changeValue(" + i + "," + j + ")'>" + arr[i][j] + "</td>"
+            }
+            data += "</tr>";
+        }
+        data += "</table>";
+        board.innerHTML = data;
+    }
+
+    function changeValue(x, y) {
+        if (checkPlayer && checkExist(x, y)) {
+            arr[x][y] = "X";
+            checkPlayer = false;
+            if (checkWin("X")) {
+                alert("Player X win");
+            }
+        } else if (!checkPlayer && checkExist(x, y)){
+            arr[x][y] = "O";
+            checkPlayer = true;
+            if (checkWin("O")) {
+                alert("Player O win");
+            }
+        }
+        displayBoard();
+    }
+
+    function checkExist(x, y) {
+        if (arr[x][y] !== ""){
+            alert("Error!!");
+            return false;
+        }
+        return true;
+    }
+
+    function checkWin(player) {
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                if (arr[i][j] === player) {
+                    // hang doc
+                    if (arr[i][j + 1] === player && arr[i][j + 2] === player) {
+                        return true;
+                    }
+
+                    // hang ngang
+                    if (arr[i +1][j] === player && arr[i + 2][j] === player) {
+                        return true;
+                    }
+
+                    //hang cheo 1
+                    if (arr[i + 1][j + 1] === player && arr[i + 2][j + 2] === player) {
+                        return true;
+                    }
+
+                    //hang cheo 2
+                    if (arr[i + 1][j - 1] === player && arr[i + 2][j - 2] === player) {
+                        return true;
+                    }
+                }
+            }
+        }
+    }
+
+    addArray(arr);
+    displayBoard();
+</script>
+</body>
+</html>

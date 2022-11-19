@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Sinh bảng cửu chương</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+        td{
+            width: 60px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="table"></div>
+<script>
+    let sout ="<table border='1'>";
+    for (let row=1; row<=9 ; row++){
+        sout+="<tr>";
+        for (let column=2 ; column <= 9 ; column++){
+            let result = row*column;
+            sout+="<td>";
+            sout+= column + ' x ' + row + ' = ' + result;
+            sout+="</td>";
+
+        }
+
+        sout+="</tr>";
+    }
+    document.getElementById('table').innerHTML= sout;
+</script>
+</body>
+</html>

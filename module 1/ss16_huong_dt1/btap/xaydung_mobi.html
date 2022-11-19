@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng điện thoại mô tả lớp</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(batteryPercent, messageDraft, messageSent, messageInbox, status) {
+            this.batteryPercent = batteryPercent;
+            this.messageDraft = messageDraft;
+            this.messageSent = messageSent;
+            this.messageInbox = messageInbox;
+            this.status = status;
+        }
+
+        setBatteryPercent(batteryPercent) {
+            this.batteryPercent = batteryPercent;
+        }
+
+        getBatteryPercent() {
+            return this.batteryPercent;
+        }
+
+        setMessageDraft(messageDraft) {
+            this.messageDraft = messageDraft;
+        }
+
+        getMessageDraft() {
+            return this.messageDraft;
+        }
+
+        setMessageSent(messageSent) {
+            this.messageSent = messageSent;
+        }
+
+        getMessageSent() {
+            return this.messageSent;
+        }
+
+        getMessageInbox() {
+            return this.messageInbox;
+        }
+
+        setMessageInbox(value) {
+            this.messageInbox = value;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        setStatus(value) {
+            this.status = value;
+        }
+
+        showStatus() {
+            if (this.status) {
+                document.write("Mobile is on <br>");
+            } else {
+                document.write("Mobile is off <br>");
+            }
+        }
+
+        turnOn() {
+            this.setStatus(true);
+        }
+
+        turnOff() {
+            this.setStatus(false);
+        }
+
+        charge() {
+            document.write("Charge .... <br>");
+            this.setBatteryPercent(100);
+        }
+
+        writeMessage(messageText) {
+            if (this.status) {
+                this.messageDraft.push(messageText);
+                this.batteryPercent--;
+            } else {
+                alert("Please turn on mobile");
+            }
+        }
+
+        receiveMessage(messageText) {
+            this.messageInbox.push(messageText);
+            this.batteryPercent--;
+        }
+
+        sendMessage(otherMobile) {
+            if (this.status) {
+                let message = this.messageDraft.shift();
+                otherMobile.receiveMessage(message);
+                this.messageSent.push(message);
+                this.batteryPercent--;
+            } else {
+                alert("Please turn on mobile");
+            }
+
+        }
+
+        showMessageInbox() {
+            if (this.status) {
+                document.write("message inbox <br>");
+                for (let i = 0; i < this.messageInbox.length; i++) {
+                    document.write(i + 1 + ". " + this.messageInbox[i] + "<br>");
+                }
+                this.batteryPercent--;
+            } else {
+                alert("Please turn on mobile");
+            }
+        }
+
+        showMessageSent() {
+            if (this.status) {
+                document.write("message sent <br>");
+                for (let i = 0; i < this.messageSent.length; i++) {
+                    document.write(i + 1 + ". " + this.messageSent[i] + "<br>");
+                }
+                this.batteryPercent--;
+            } else {
+                alert("Please turn on mobile");
+            }
+        }
+    }
+
+    let nokia = new Mobile(50, [], [], [], false);
+    let iphone = new Mobile(10, [], [], [], false);
+    nokia.turnOn();
+    nokia.writeMessage("hello");
+    nokia.writeMessage("hi");
+    nokia.writeMessage("bye");
+    nokia.sendMessage(iphone);
+    nokia.sendMessage(iphone);
+
+    iphone.turnOff();
+    document.write("iphone <br>");
+    iphone.showMessageInbox();
+    document.write("nokia <br>");
+    nokia.showMessageSent();
+</script>
+</body>
+</html>

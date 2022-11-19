@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+<script>
+    let ip=parseInt(prompt('nhap so de tinh binh phuong: '));
+    alert(square(ip))
+    function square(x){
+        let y=x*x;
+        return y;
+    }
+</script>
+-->
+
+<!--
+<script>
+    const PI=3.14;
+    let ip=parseInt(prompt('nhap r (ban kinh): '));
+    alert('chu vi hinh tron: '+perimeter(ip)+' '+' diện tích hình tròn: '+acreage(ip))
+    function perimeter(p){
+        return 2*p*PI;
+    }
+    function acreage(s){
+        return PI*s*s;
+    }
+</script>
+-->
+<!--
+<script>
+    let ip=parseInt(prompt('nhap 1 so de tinh giai thua: '));
+    alert('giai thừa của '+ip+' là '+factorial(ip));
+
+    function factorial(n){
+        let fac=1;
+        for (let i=1; i <= n ; i++){
+            fac=fac*i;
+        }
+        return fac;
+    }
+</script>
+-->
+<!--
+<script>
+    let arr=parseInt(prompt("Nhap vao so hoac chuoi: ")) ;
+    function check(str) {
+        if(!isNaN(str)){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    console.log(check(arr))
+
+</script>
+-->
+
+
+<!--
+<script>
+    let n=parseInt(prompt('nhap so luong N:'));
+    let arr=[];
+    for (let i=0 ; i< n ; i++){
+        let arr1=parseInt(prompt('phan tu thu '+i));
+        arr.push(arr1)
+    }
+
+    function minArray(num){
+        let min=num[0];
+        for (let i=0 ; i<num.length ; i++){
+            if (num[i]<min){
+                min=num[i]
+            }
+        }
+        return min;
+    }
+    document.write(minArray(arr));
+</script>
+-->
+<!--
+<script>
+    let ip=parseInt(prompt('nhap vao so bat ki:'));
+    function checkPos(num){
+        if (num<0){
+            return false;
+        }
+        return true;
+    }
+    alert(checkPos(ip));
+
+</script>
+-->
+<!--
+<script>
+    let num1=parseInt(prompt('num1: '))
+    let num2=parseInt(prompt('num2: '))
+
+    function chuyenDoi(num1,num2) {
+        let temp=num1;
+        num1=num2;
+        num2=temp;
+        document.write(num1," ",num2)
+    }
+
+   chuyenDoi(num1,num2);
+</script>
+-->
+<!--
+<script>
+    let n=parseInt(prompt('nhap sluong mang: '))
+    let arr=[];
+    for (let i=0 ; i<n ; i++){
+        let arr1=parseInt(prompt('phan tu thu '+i));
+        arr.push(arr1);
+    }
+
+    function reverseArr(array){
+        for (let i=0 ; i<array.length/2 ; i++){
+            let temp=array[i];
+            array[i]=array[array.length-i-1];
+            array[array.length-i-1]=temp;
+        }
+        return array;
+    }
+    document.write('truoc khi dao mang: '+arr+'<br>')
+    document.write('sau khi dao mang: '+reverseArr(arr))
+</script>
+-->
+<!---->
+<script>
+    let n=parseInt(prompt('nhap sluong mang: '))
+    let arr=[];
+    for (let i=0 ; i<n ; i++){
+        let arr1=prompt('phan tu thu '+i);
+        arr.push(arr1);
+    }
+
+    let ip=prompt('nhap 1 ki tu ban muon tim: ');
+    function findArr(find,value){
+        let count=0;
+        for (let i=0 ; i <= find.length ; i++){
+            if (find[i]==value){
+                count++;
+            }
+        }
+        if (count!=0){
+            return count;
+        }else {
+            return -1;
+        }
+    }
+    document.write(ip+' xuat hien '+findArr(arr,ip)+' lan');
+</script>
+</body>
+</html>

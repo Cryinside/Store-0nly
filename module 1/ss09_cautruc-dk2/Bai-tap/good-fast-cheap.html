@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng good-fast-cheap</title>
+    <style>
+        body.dark1{
+            background: #749dd6;
+            transition: var(--transition-effect);
+
+        }
+        body.dark2{
+            background: #668b5e;
+            transition: var(--transition-effect);
+        }
+        body.dark3{
+            background: #ee4866;
+            transition: var(--transition-effect);
+        }
+        body{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            background: #eaeff3;
+            color: #000;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        :root{
+            --transition-effect: .25s cubic-bezier(.23,-0.58,.86,1.71);
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:50px ;
+        }
+
+
+        .swtich-toggle1{
+            width: 90px;
+            height: 50px;
+            appearance: none;
+            background: #4b4c4d;
+            border-radius: 26px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: inset 0 0 16px rgba(0, 0, 0, .3);
+        }
+        .switch2{
+            width: 90px;
+            height: 50px;
+            appearance: none;
+            background: #4b4c4d;
+            border-radius: 26px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: inset 0 0 16px rgba(0, 0, 0, .3);
+        }
+        .switch3{
+            width: 90px;
+            height: 50px;
+            appearance: none;
+            background: #4b4c4d;
+            border-radius: 26px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: inset 0 0 16px rgba(0, 0, 0, .3);
+        }
+        .swtich-toggle1::before{
+            content: "";
+            width: 44px;height: 44px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background: #efe2bf;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+            transition: var(--transition-effect);
+        }
+        .swtich-toggle1.switch1:checked{
+            background: #749dd6;
+        }
+        .swtich-toggle1.switch2:checked{
+            background: #668b5e;
+        }
+        .swtich-toggle1.switch3:checked{
+            background: #ee4866;
+        }
+        .swtich-toggle1:checked::before{
+            left: 40px;
+        }
+
+    </style>
+</head>
+<body class="dark1 dark2 dark3">
+<div class="wrapper" >
+    <h3>GOOD</h3>
+    <input type="checkbox" class="switch1 swtich-toggle1" id="light-dark1" onclick="check('good')">
+</div>
+<div class="wrapper">
+    <h3>FAST</h3>
+    <input type="checkbox" class="switch2 swtich-toggle1" id="light-dark2" onclick="check('fast')" >
+</div>
+<div class="wrapper">
+    <h3>CHEAP</h3>
+    <input type="checkbox" class="switch3 swtich-toggle1" id="light-dark3" onclick="check('cheap')">
+</div>
+
+
+
+<script>
+
+    let good=document.getElementById('light-dark1');
+    let fast=document.getElementById('light-dark2');
+    let cheap=document.getElementById('light-dark3');
+function check(value){
+    switch (value){
+        case 'cheap':
+            if (fast.checked && good.checked) {
+                fast.checked = false;
+                break;
+            }
+        case 'fast':
+            if (good.checked && cheap.checked){
+                good.checked=false;
+                break;
+            }
+         case 'good':
+             if (fast.checked && cheap.checked){
+                 cheap.checked=false;
+                 break;
+             }
+    }
+}
+    let checkbox_toggle1=good;
+    let checkbox_toggle2=fast;
+    let checkbox_toggle3=cheap;
+
+checkbox_toggle1.addEventListener('change',function (){
+    document.body.classList.toggle('dark1');
+    }
+);
+
+checkbox_toggle2.addEventListener('change',function (){
+            document.body.classList.toggle('dark2');
+        }
+    );
+
+checkbox_toggle3.addEventListener('change',function (){
+            document.body.classList.toggle('dark3');
+        }
+    );
+
+
+
+
+
+</script>
+</body>
+</html>

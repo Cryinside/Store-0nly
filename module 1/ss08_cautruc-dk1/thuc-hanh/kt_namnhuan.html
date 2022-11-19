@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KT NAM NHUAN</title>
+</head>
+<body>
+<script>
+    let isLeapyear = false;
+    let year = parseInt(prompt("Enter a year: "));
+    let isDivisibleby4 = year % 4==0;
+    if(isDivisibleby4){
+        let isDivisibleby100 = year%100==0;
+        if (isDivisibleby100){
+            let isDivisibleby400 = year%400==0;
+            if (isDivisibleby400){
+                isLeapyear=true;
+                }
+            }else{
+            isLeapyear=true;
+        }
+    }
+
+    if (isLeapyear){
+        alert( year + " is a Leap year ")
+    }else{
+        alert(year + " isn't a Leap year ")
+    }
+</script>
+</body>
+</html>

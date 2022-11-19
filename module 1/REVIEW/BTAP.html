@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script >
+        function add(){
+            let content1 = document.getElementById('content1').value;
+            if (content1 == ''){
+                alert("Bạn chưa nhập tiêu đề");
+            }
+            else {
+                let html = '<button type="button">'+content1+'</button>';
+                document.getElementById('result').insertAdjacentHTML('afterend', html);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!--bai1 -->
+
+<h3> In ra một thông báo khi bấm vao button</h3>
+<input type="button" onclick="alert('Xin chào các bạn lớp C0421G1')" value="show alert">
+<br>
+<hr>
+
+<!--bai2 -->
+
+<h3> Thay đổi nội dung của thẻ HTML</h3>
+<div id="content" style="padding: 20px; background: blue; color: white; margin: 20px 1px;">
+    Thời tiết hôm nay thế nào??
+</div>
+<button type="button" onclick="document.getElementById('content').innerHTML='Hôm nay trời nắng đẹp'">Trời nắng</button>
+<button type="button"  onclick="document.getElementById('content').innerHTML='Hôm nay trời mưa ngâu'">Trời mưa</button>
+<br>
+<hr>
+
+<!--bai3 -->
+
+
+
+    <h1>Thêm thẻ HTML</h1>
+
+    <input type="text" id="content1" value=""/>
+    <input type="button" id="button_add" onClick="add()" value="Add"/>
+
+    <div id="result"></div>
+
+</body>
+</html>

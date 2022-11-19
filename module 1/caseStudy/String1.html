@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string=prompt('nhap ten: ');
+    alert('Truoc khi chuan hoa: '+string+
+        '\n Sau khi chuan hoa: '+standardized(string)+
+        '\n Chu co do dai lon nhat la: '+maxLength(string)
+    )
+    function standardized(name){
+        name=name.trim().toLowerCase();
+        let nameArr=Array.from(name);
+        for (let i=0;i<nameArr.length-1;i++){
+            if (nameArr[i]===' ' && nameArr[i+1]===' '){
+                for (let j=i+1;j<nameArr.length-1;i++){
+                    nameArr[j]=nameArr[j+1];
+                }
+                i--;
+                nameArr.pop();
+            }
+        }
+        nameArr[0]=nameArr[0].toUpperCase();
+        for (let i=0;i<nameArr.length-1;i++){
+            if (nameArr[i]===' '){
+                nameArr[i+1]=nameArr[i+1].toUpperCase();
+            }
+        }
+        return nameArr.join('');
+    }
+    
+    function maxLength(name) {
+        let arrName= name.split(' ');
+        let maxName=arrName[0];
+        for (let i=0;i<arrName.length;i++){
+            if (maxName.length < arrName[i].length){
+                maxName=arrName[i];
+            }
+        }
+        return maxName;
+    }
+</script>
+</body>
+</html>

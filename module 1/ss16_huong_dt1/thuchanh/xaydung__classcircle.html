@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<script>
+    class circle{
+        constructor(radius) {
+            this.radius=radius;
+
+        }
+
+        getRadius(){
+            return this.radius;
+        }
+        getArea(){
+            return Math.PI*this.radius*this.radius;
+        }
+    }
+    let cir=new circle(2);
+    let rad= cir.getRadius();
+    let Area=cir.getArea();
+    alert('rad: '+rad+'; area: '+Area);
+</script>
+</body>
+</html>

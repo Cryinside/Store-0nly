@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game XXX</title>
+    <style>
+        button{
+            width: 150px;
+            height: 100px;
+            font-size: 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 600px;
+            background-color: lightblue;
+        }
+        button:hover{
+            background-color: rgb(182, 182, 182);
+        }
+        h2{
+            text-align: center;
+            font-family: Serif, Arial, "SFU Futura full";
+        }
+    </style>
+</head>
+<body>
+<h2>CHÚC BẠN MAY MẮN. MỜI BẠN XƠI, CÙNG NHAU ĐOÁN SỐ</h2>
+<button type="button" onclick="start()" style="font-family: 'SFU Futura full'"> START </button>
+<script>
+
+    function start(){
+        let from=parseInt(prompt('Số từ: '));
+        let to=parseInt(prompt('Đến số: '));
+        let check=true;
+        let comNun=Math.floor(Math.random()*(to-from+1))+from;
+        for (let i=0 ; i<4 ; i++){
+            let guess=parseInt(prompt('Mời bạn đoán: '));
+            if (guess === comNun){
+                alert('Thén rồi hỉ');
+                check=false;
+                break;
+            }else if (guess > comNun){
+                alert('Số mi nhập lớn hơn. Nhập lại mi');
+            }else {
+                alert('Số mi nhập nhỏ hơn. Nhập lại mi');
+            }
+        }
+        if (check){
+            alert('Bạn thật hậu đậu');
+        }
+
+    }
+</script>
+</body>
+</html>

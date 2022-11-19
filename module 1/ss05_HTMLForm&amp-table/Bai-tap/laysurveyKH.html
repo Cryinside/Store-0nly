@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KHAO SAT KH</title>
+    <style>
+        .cangiua{
+            text-align: center;
+        }
+    </style>
+    <style>
+        .Questions{
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+<form name="khaosat_KH" action="laysurveyKH.html">
+    <h1>Market Research Survey</h1>
+    <span>Please take a few moments to completee this satisfaction survey.</span>
+    <hr>
+    <label for="age" class="Questions">What is your age range?</label><br>
+    <select name="age" id="age">
+        <option selected>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select>
+    <br><br>
+    <label for="income" class="Questions">What is your yearly income range?</label><br>
+    <select name="income" id="income">
+        <option selected>$0 - $25,000</option>
+        <option>$25,000 -  $50,000</option>
+        <option>$50,001 -  $100,000</option>
+        <option>$100,000+</option>
+    </select>
+    <br><br>
+    <label class="Questions">Gender Identity</label><br>
+    <input name="gender" id="male" type="radio"><label for="male">Male</label><br>
+    <input name="gender" id="female" type="radio"><label for="female">Female</label><br>
+    <input name="gender" id="nonbinary" type="radio"><label for="nonbinary">Nonbinary</label><br>
+    <input name="gender" id="other" type="radio"><label for="other">Other</label><br>
+    <input name="other_explaination" type="text">
+    <br><br>
+    <label class="Questions">Which of the following products have your purchased in the last 2 months.Please check all that apply.</label><br>
+    <input name="product" id="1" type="checkbox"><label for="1">Product 1</label><br>
+    <input name="product" id="2" type="checkbox"><label for="2">Product 2</label><br>
+    <input name="product" id="3" type="checkbox"><label for="3">Product 3</label>
+    <br><br>
+    <label class="Questions">How often would you use our new product?</label><br>
+    <input name="offen" id="daily" type="radio"><label for="daily">Daily</label><br>
+    <input name="offen" id="weekly" type="radio"><label for="weekly">Weekly</label><br>
+    <input name="offen" id="monthly" type="radio"><label for="monthly">Monthly</label>
+    <br><br>
+
+
+    <table>
+        <caption><label class="Questions">What would you pay for the new product?</label><br></caption>
+        <tr>
+            <td class="cangiua"><span>$</span><input name="dollars" id="dollars" type="text" size="5" maxlength="5"><span>.</span></td>
+            <td class="cangiua"><input name="cents" id="cents" type="text" size="4" maxlength="3"></td>
+        </tr>
+        <br>
+        <tr>
+            <td class="cangiua"><label for="dollars">Dollars</label></td>
+            <td class="cangiua"><label for="cents">Cents</label></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

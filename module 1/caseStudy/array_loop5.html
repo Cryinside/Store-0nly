@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<script>-->
+<!--    var divideString = function(s, k, fill) {-->
+<!--        var result = [];-->
+<!--        for(var i=0;i<k-1;i++){-->
+<!--            s+=fill;-->
+<!--        }-->
+<!--        for(var i = 0;i<s.length;i+=k){-->
+<!--            var temp = "";-->
+<!--            for(var j = 0; j<k && i+j<s.length;j++){-->
+<!--                temp+=s[i+j];-->
+<!--            }-->
+<!--            if(temp.length === k){-->
+<!--                result.push(temp);-->
+<!--            }-->
+<!--        }-->
+
+<!--        return result;-->
+<!--    }-->
+<!--    console.log(divideString('avsfasg',3,'x'))-->
+<!--    ;-->
+
+<!--</script>-->
+<script>
+    var minMoves = function(target, maxDoubles) {
+        let count=maxDoubles;
+        let result=0;
+
+        while(target!==1){
+            if(count && target%2==0){
+                result++;
+                target/=2;
+                count--;
+            }else if(!count){
+                result+=(target-1);
+                return result;
+            }else if( count && target%2==1){
+                target--;
+                result++;
+            }
+        }
+        return result;
+    }
+    console.log(minMoves(19,2));
+</script>
+</body>
+</html>

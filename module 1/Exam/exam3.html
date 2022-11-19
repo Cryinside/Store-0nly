@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table tr td {
+            border: 1px;
+            margin-top: 500px;
+            text-align: center;
+        }
+        .name{
+            width: 200px;
+            height: 30px;
+        }
+        th{
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Quản lí sách</h2>
+<table>
+    <tr>
+        <td>Mã số:</td>
+        <td><input type="text" id="showProduct1" placeholder="code"></td>
+    </tr>
+    <tr>
+        <td>Tên sách:</td>
+        <td><input type="text" id="showProduct2" placeholder="Name"></td>
+    </tr>
+    <tr>
+        <td>Năm xuất bản:</td>
+        <td><input type="text" id="showProduct3" placeholder="Year"></td>
+    </tr>
+    <tr>
+        <td>Số quyển:</td>
+        <td><input type="text" id="showProduct4" placeholder="Num"></td>
+    </tr>
+    <tr>
+        <td>Tình trạng:</td>
+        <td><input type="text" id="showProduct5" placeholder="status"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button onclick="createNewProduct()">ADD</button> </td>
+        <td ></td>
+    </tr>
+</table>
+<br>
+
+<br>
+<br>
+<p id="sumProduct"></p>
+<table >
+
+    <tbody id="products">
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th> EDIT </th>
+        <th> DELETE </th>
+    </tr>
+    </tbody>
+
+
+
+
+</table>
+<script>
+    let arrProduct1=[];
+    let arrProduct2=[];
+    let arrProduct3=[];
+    let arrProduct4=[];
+    let arrProduct5=[];
+    function showAllproduct(){
+        let content='';
+        content+='<tr>\n' +
+            '        <th>Mã số sách</th>\n' +
+            '        <th> Tên sách </th>\n' +
+            '       <th> Năm xuất bản </th>\n' +
+            '       <th> Số quyển </th>\n' +
+            '       <th> Tình trạng </th>\n' +
+            '<th><span id="sum"></span></th>\n' +
+            '    </tr>'
+        for (let i=0 ; i<arrProduct1.length ; i++){
+            content+=' <tr>\n' +
+                '        <td class="name">'+arrProduct1[i]+'</td>\n' +
+                '        <td class="name">'+arrProduct2[i]+'</td>\n' +
+                '        <td class="name">'+arrProduct3[i]+'</td>\n' +
+                '        <td class="name">'+arrProduct4[i]+'</td>\n' +
+                '        <td class="name">'+arrProduct5[i]+'</td>\n' +
+                '        <td><button onclick="editProduct('+i+')">EDIT</button></td>\n' +
+                '        <td><button onclick="delProduct('+i+')">DEL</button></td>\n' +
+                '    </tr>'
+        }
+        document.getElementById('products').innerHTML=content;
+        document.getElementById('showProduct1').value=''
+        document.getElementById('showProduct2').value=''
+        document.getElementById('showProduct3').value=''
+        document.getElementById('showProduct4').value=''
+        document.getElementById('showProduct5').value=''
+        document.getElementById('sum').innerText= arrProduct1.length +' san pham '
+    }
+    showAllproduct();
+
+    function createNewProduct(){
+        let newP1=document.getElementById('showProduct1',).value;
+        let newP2=document.getElementById('showProduct2',).value;
+        let newP3=document.getElementById('showProduct3',).value;
+        let newP4=document.getElementById('showProduct4',).value;
+        let newP5=document.getElementById('showProduct5',).value;
+        arrProduct1.push(newP1);
+        arrProduct2.push(newP2);
+        arrProduct3.push(newP3);
+        arrProduct4.push(newP4);
+        arrProduct5.push(newP5);
+
+
+        showAllproduct();
+    }
+    function delProduct(index){
+        arrProduct1.splice(index,1);
+        arrProduct2.splice(index,1);
+        arrProduct3.splice(index,1);
+        arrProduct4.splice(index,1);
+        arrProduct5.splice(index,1);
+
+        showAllproduct();
+    }
+    function editProduct(index){
+        let newValue1=prompt('Mã số sách: ');
+        let newValue2=prompt('Tên sách: ');
+        let newValue3=prompt('Năm xuất bản: ');
+        let newValue4=prompt('Số lượng: ');
+        let newValue5=prompt('Tình trạng: ');
+        arrProduct1[index]=newValue1;
+        arrProduct2[index]=newValue2;
+        arrProduct3[index]=newValue3;
+        arrProduct4[index]=newValue4;
+        arrProduct5[index]=newValue5;
+        showAllproduct();
+    }
+
+
+    class Book {
+        constructor(Id, Name, Year, number, condition) {
+            this.Id = Id;
+            this.Name = Name;
+            this.Year = Year;
+            this.number = number;
+            this.condition = condition;
+        }
+
+        setBookId(Id) {
+            this.Id = Id;
+        }
+        getBookId(){
+           let arr=this.Id.split('');
+           for (let i=0;i<arr.length;i++){
+
+           }
+        }
+        setBookName(Name) {
+            this.Name = Name;
+        }
+        getBookName(){
+            return this.Name;
+        }
+        setPublishYear(Year) {
+            this.Year = Year;
+        }
+        getPublishYear(){
+            return this.Year;
+        }
+        setNumber(number) {
+            this.number = number;
+        }
+        getNumber(){
+            return this.number;
+        }
+        setCondition(condition) {
+            this.condition = condition;
+        }
+        getCondition(){
+            return this.condition;
+        }
+    }
+    let bookList = [];
+    bookList.push('12345','Toán','2000',3,'True');
+    bookList.push('23456','Văn','1998',4,'True');
+    bookList.push('37456','Tiếng Anh','1999',5,'False');
+
+</script>
+</body>
+</html>

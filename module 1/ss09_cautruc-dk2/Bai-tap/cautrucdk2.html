@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+
+<!--bai1-->
+
+<script>
+    let doC=parseFloat(prompt('nhập số đọ C'));
+    doF= doC * 9/5 + 32;
+    alert('số độ F là:'+doF);
+</script>
+
+
+<!--bai2-->
+
+<script>
+    let m=parseFloat(prompt('nhập số mét'));
+    feet=m*3.2808
+    alert('số feet là: ' +feet);
+</script>
+
+<!--bai3-->
+
+<script>
+    let canhHinhVuong= parseFloat(prompt('nhập cạnh hình vuông đơn vị cm'));
+    dienTichHinhVuong=Math.pow(canhHinhVuong,2);
+    alert('diện tích hình vuông là: '+ dienTichHinhVuong+ '  centimet vuông')
+</script>
+
+<!--bai4-->
+
+<script>
+    let a=parseFloat(prompt('Nhập chiều dài hình chữ nhật đơn vị m'));
+    let b=parseFloat(prompt('Nhập chiều rộng hình chữ nhật đơn vị m'));
+    dienTichHinhChuNhat=a*b;
+    alert('diện tích hình chữ nhật là: '+ dienTichHinhChuNhat + ' mét vuông');
+
+</script>
+
+<!--bai5-->
+
+<script>
+    let a=parseFloat(prompt('nhập cạnh kề đầu tiên của tam giác vuông'));
+    let b=parseFloat(prompt('nhập cạnh kề thứ hai của tam giác vuông'));
+    let dienTichHinhTamGiac=1/2 *a*b;
+    alert('diện tích hình tam giác là: ' + dienTichHinhTamGiac);
+</script>
+
+<!--bai6-->
+
+<script>
+    a=parseFloat(prompt('nhập số a:'));
+    b=parseFloat(prompt('nhập số b:'));
+    if(a==0) {
+        if(b==0) {
+            alert('phương trình có vô số nghiệm');
+        } else {
+            alert(' phương trình vô nghiệm')
+        }
+    } else {
+        x=-b/a;
+        alert('phương trình có nghiệm duy nhất là: ' +x);
+    }
+</script>
+
+<!--bai7-->
+
+<script>
+    let a=parseFloat(prompt('nhập số a :'));
+    let b=parseFloat(prompt('nhập số b :'));
+    let c=parseFloat(prompt('nhập số c :'));
+    if(a==0){
+        if(b==0) {
+            if(c==0){
+                alert('Phương trình có vô số nghiệm');
+            } else {
+                alert('Phương trình vô nghiệm');
+            }
+        } else {
+            x=-c/b;
+            alert('Phương trình có 1 nghiệm duy nhất x= '+x);
+        }
+    } else{
+        delta=Math.pow(b,2)-4*a*c;
+        if(delta<0) {
+            alert('Phương trình vô nghiệm');
+        }
+        if(delta==0) {
+            x=-b/(2*a);
+            alert('Phương trình có nghiệm trùng x1=x2=x= '+x);
+        }
+        if(delta>0){
+            x1=(-b+Math.sqrt(delta))/(2*a);
+            x2=(-b-Math.sqrt(delta))/(2*a);
+            alert('Phương trình có 2 nghiệm là x1: '+x1 +' x2 là: '+x2);
+        }
+    }
+</script>
+
+<!--bai8-->
+
+<script>
+    let soTuoi=parseInt(prompt('nhập số tuổi'));
+        if(soTuoi<120 && soTuoi>0) {
+            alert('Số bạn nhập là số tuổi của 1 con người ');
+        } else {
+            alert('Số bạn nhập KHÔNG PHẢI là số tuổi của 1 con người');
+        }
+</script>
+
+<!--bai9-->
+
+<script>
+    let a=parseFloat(prompt('canh a:'));
+    let b=parseFloat(prompt('canh b:'));
+    let c=parseFloat(prompt('canh c:'));
+    if(a>0 && b>0 && c>0 && (a + b) > c && (b + c) > a && (a + c) > b){
+        alert('Đay là tam giác');
+    } else {
+        alert('Đây KHÔNG PHẢI là 3 cạnh của 1 tam giác');
+    }
+</script>
+
+<!--bai10-->
+
+<script>
+    let sodien=parseFloat(prompt('nhập số điện của bạn(kWh):'));
+    let  bac1=1678, bac2=1734, bac3=2014, bac4=2536, bac5=2834, bac6=2927;
+    let tienDien;
+
+    if (sodien<0){
+        alert('Vui long nhap lai So Dien, So dien khong duoc nho hon 0');
+    }else if (sodien<=50){
+        tienDien=bac1*sodien;
+        alert('ban da dung dien trong khoang 0 - 50 kWh so tien ban phai tra la: ' + tienDien);
+    }else if (sodien <= 100){
+        tienDien=50*bac1+((sodien-50)*bac2);
+        alert('ban da dung dien trong khoang 51 - 100 kWh so tien ban phai tra la: ' + tienDien);
+    }else if (sodien <= 200){
+        tienDien=50*bac1+(50*bac2)+((sodien-100)*bac3);
+        alert('ban da dung dien trong khoang 101 - 200 kWh so tien ban phai tra la: ' +tienDien);
+    }else if (sodien <= 300){
+        tienDien=50*bac1+(50*bac2)+(100*bac3)+((sodien-200)*bac4);
+        alert('ban da dung dien trong khoang 201 - 300 kWh so tien ban phai tra la:' +tienDien);
+    }else if (sodien <= 400){
+        tienDien=50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+((sodien-300)*bac5);
+        alert('ban da dung dien trong khoang 301 - 400 kWh so tien ban phai tra la: ' +tienDien);
+    }else{
+        tienDien=50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+(100*bac5)+((sodien-400)*bac6);
+        alert('ban da dung dien tren 400 kWh so tien ban phai tra la: '+tienDien);
+    }
+</script>
+<!--bai11-->
+
+<script>
+    let soTienLuong=parseFloat(prompt('Nhập số tiền lương mỗi tháng'));
+    if (soTienLuong>=20000000){
+        tienThue=(soTienLuong*20)/100;
+    } else if(soTienLuong>=15000000) {
+        tienThue=(soTienLuong*15)/100
+    } else if(soTienLuong>=10000000) {
+        tienThue=(soTienLuong*10)/100;
+    } else if(soTienLuong>=5000000) {
+        tienThue=(soTienLuong*5)/100;
+    } else {
+        tienThue=(soTienLuong*0)/100;
+    }
+    alert('số tiền thuế của bạn mỗi tháng là: '+ tienThue+' VND');
+</script>
+
+<!--bai12-->
+
+<script>
+    let soTienBanDau=parseFloat(prompt('Nhập số tiền ban đầu: '));
+    let soThang=parseFloat(prompt('Nhập số tháng: '));
+    let laiSuatHangThang=parseFloat(prompt('Nhập lãi suất hằng tháng: '));
+    let soTienThuDuoc=soTienBanDau*(Math.pow((1+laiSuatHangThang/100),soThang));
+    tienLai=soTienThuDuoc-soTienBanDau;
+    alert('lãi suất thu được sau khi gửi '+soThang+' tháng là: '+tienLai+' VND');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table tr td {
+            border: 1px;
+            margin-top: 500px;
+            text-align: center;
+        }
+        .name{
+            width: 200px;
+            height: 30px;
+        }
+        th{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>MENU</h1>
+<h3>1. Cafe </h3>
+<h3>2. Cam </h3>
+<h3>3. Cà rốt </h3>
+<h3>4. Cà chua </h3>
+<button type="button" onclick="order()">Order</button>
+<p id="listOrder"></p>
+<p id="sumProduct"></p>
+<table>
+
+    <tbody id="products">
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th> EDIT </th>
+        <th> DELETE </th>
+    </tr>
+    </tbody>
+
+</table>
+
+
+<script>
+    let ip;
+    let arr=[];
+    let gia=[];
+    let sum=[]
+    let thanhTien=0;
+    let res;
+    let priceOfProduct;
+    let total=[];
+    function totalMoney(arr){
+        let sum=0;
+        // for (let i=0;i<arr.length;i++){
+        //     sum+=arr[i];
+        // }
+
+        const initialValue = 0;
+        const sumWithInitial = arr.reduce(
+            (previousValue, currentValue) => previousValue + currentValue,
+            initialValue
+        );
+        return sumWithInitial
+    }
+    function show() {
+        let content='';
+        content+='<tr>\n' +
+            '        <th>Tên sản phẩm</th>\n' +
+            '        <th>Số lượng</th>\n' +
+            '        <th>Giá</th>\n' +
+            '        <th>Thành tiền</th>\n' +
+            '        <th> EDIT </th>\n' +
+            '       <th> DELETE </th>\n' +
+            '<th><span id="sum"></span></th>\n' +
+            '    </tr>'
+
+        for (let i=0 ; i<arr.length ; i++){
+            content+=' <tr>\n' +
+                '        <td class="name">'+arr[i]+'</td>\n' +
+                '        <td class="name">'+sum[i]+'</td>\n' +
+                '        <td class="name">'+gia[i]+'</td>\n' +
+                '        <td class="name">'+gia[i]*sum[i]+'</td>\n' +
+                '        <td><button onclick="editProduct('+i+')">EDIT</button></td>\n' +
+                '        <td><button onclick="delProduct('+i+')">DEL</button></td>\n' +
+                '    </tr>'
+        }
+
+        console.log(totalMoney(total));
+
+
+        content+=' <tr>\n' +
+            '        <th colspan="3">Tổng tiền</th>\n' +
+            '        <th>'+totalMoney(total)+'</th>\n' +
+            '    </tr>'
+
+
+        document.getElementById('products').innerHTML=content;
+
+        document.getElementById('sum').innerText= arr.length +' san pham '
+
+    }
+    function order(){
+        do {
+            ip=parseInt(prompt('nhập vào loại thức uống bạn muốn chọn:'));
+
+            switch (ip){
+
+                case 1:
+                    alert('ban đã chọn cafe');
+                    let sluong1=parseInt(prompt('nhap so lượng: '));
+                    alert('moi ban chon tiep hoac nhấn phím 7 để thoát');
+                    res='cafe';
+                    priceOfProduct=23000
+                    arr.push(res);
+                    sum.push(sluong1);
+                    gia.push(parseInt(priceOfProduct));
+                    let res1=sluong1*priceOfProduct
+                    total.push(res1);
+                    continue;
+                case 2:
+                    alert('ban đã chọn cam');
+                    let sluong2=parseInt(prompt('nhap so lượng: '));
+                    alert('moi ban chon tiep hoac nhấn phím 7 để thoát');
+                    res='cam';
+                    priceOfProduct=27000
+                    arr.push(res);
+                    sum.push(sluong2);
+                    gia.push(priceOfProduct);
+                    let res2=sluong2*priceOfProduct
+                    total.push(res2);
+                    continue;
+
+                case 3:
+                    alert('bạn đã chọn cà rốt');
+                    let sluong3=parseInt(prompt('nhap so lượng: '));
+                    alert('moi ban chon tiep hoac nhấn phím 7 để thoát')
+                    res='cà rốt';
+                    priceOfProduct=28000
+                    arr.push(res);
+                    sum.push(sluong3);
+                    gia.push(priceOfProduct);
+                    let res3=sluong3*priceOfProduct
+                    total.push(res3);
+                    continue;
+
+                case 4:
+                    alert('bạn đã chọn cà chua');
+                    let sluong4=parseInt(prompt('nhap so lượng: '));
+                    alert('moi ban chon tiep hoac nhấn phím 7 để thoát');
+                    res='cà chua';
+                    priceOfProduct=29000
+                    arr.push(res);
+                    sum.push(sluong4);
+                    gia.push(priceOfProduct);
+                    let res4=sluong4*priceOfProduct
+                    total.push(res4);
+                    continue;
+            }
+        }while (ip!=7);
+
+       show();
+
+    }
+    function editProduct(index){
+        let newValue=parseInt(prompt('moi ban nhap món moi: '));
+        let newQuantily=parseInt(prompt('so luong: '));
+        arr[index]=newValue;
+        sum[index]=newQuantily;
+        show();
+    }
+    function delProduct(index) {
+        arr.splice(index,1);
+        show();
+    }
+
+</script>
+</body>
+</html>

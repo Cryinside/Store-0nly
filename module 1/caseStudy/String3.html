@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<dl>-->
+<!--    <dt>HTML</dt>-->
+<!--    <dd>Tạo nên cấu trúc trang web</dd>-->
+<!--    <dt>CSS</dt>-->
+<!--    <dd>Để trang trí cho web</dd>-->
+<!--    <dt>Javascript</dt>-->
+<!--    <dd>Thêm hiệu ứng cho web</dd>-->
+<!--</dl>-->
+<body>
+<script>
+    let string1=prompt('nhap chuoi 1: ');
+    let string2=prompt('nhap chuoi 2: ');
+    let res=commonCharacterCount(string1,string2);
+    console.log(res);
+
+
+    function commonCharacterCount(st1,st2) {
+        let s1 = st1.split('');
+        let s2 = st2.split('');
+        let count=0;
+        for (let i = 0; i < s1.length; i++) {
+            for (let j = 0; j < s2.length; j++) {
+                if (s1[i] === s2[j]) {
+                    count += 1;
+                    s1.splice(i,1)
+                    s2.splice(j, 1);
+                    i--;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
+</script>
+</body>
+</html>

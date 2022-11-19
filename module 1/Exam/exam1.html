@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[];
+   let sizeArr;
+   sizeArr=parseInt(prompt('nhap so do dai cua mang: '));
+    do {
+         sizeArr=parseInt(prompt('xin nhap lai so do dai cua mang: '));
+    }while (sizeArr>=50);
+    for (let i=0;i<sizeArr;i++){
+        a.push(parseInt(prompt('nhap vao so nguyen thu '+i+': ')));
+    }
+    let sum=0;
+    let avarage;
+    let count=0;
+
+    for (let i=0;i<a.length;i++){
+        if (i%2==0 && a[i]%2!=0){
+            sum+=a[i];
+            count++
+        }
+        avarage=sum/count;
+    }
+    alert('cac so vua nhap: '+a+'\nTbc cac so le o vi tri chan: '+avarage)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators=[5,2,5];
+    let denominators=[6,3,4];
+    function maxFraction(valueNum1,valueNum2) {
+        //your code here
+        let max=valueNum1[0]/valueNum2[0];
+        let index=0;
+        for (let i=0;i<valueNum1.length;i++){
+            if (valueNum1[i]/valueNum2[i]>max){
+                max=valueNum1[i]/valueNum2[i];
+                index=i;
+            }
+        }
+        console.log(max+' vi tri '+index);
+
+    }
+    maxFraction(numerators,denominators);
+</script>
+</body>
+</html>

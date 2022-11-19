@@ -1,0 +1,66 @@
+BAI 1:
+BEGIN
+  INPUT TOAN, LY, HOA
+  AVERAGE = (TOAN + LY + HOA)/3
+  DISPLAY AVERAGE
+END
+
+
+BAI 2:
+BEGIN
+  INPUT DOLLAR
+  CHANGE = DOLLAR*23000
+  DISPLAY CHANGE
+END
+
+
+BAI 3:
+BEGIN
+  INPUT A,B,C
+  MAX = A
+   IF B>MAX
+	MAX = B
+   ELSE IF C>MAX
+	MAX = C
+   ELSE
+	DISPLAY MAX
+       END IF
+   END IF
+END
+
+
+BAI 4:
+BEGIN 
+  INPUT N, a[N]
+  MAX <- a1, i <- 2
+   IF i > N
+    DISPLAY MAX
+     ELSE IF ai > MAX
+    MAX = ai
+       ELSE 
+    i <- i+1
+     END IF
+   END IF
+END
+
+
+BAI 5:
+BEGIN
+  INPUT SCORE
+  IF SCORE => 75
+  DISPLAY "A"
+    ELSE IF 60 <= SCORE < 75
+    DISPLAY "B"
+	ELSE IF 45 <= SCORE < 60
+        DISPLAY "C"
+	   ELSE IF 35 <= SCORE < 45
+	   DISPLAY "D"
+	      ELSE IF SCORE < 35
+	      DISPLAY "E"
+	      END IF
+           END IF
+	END IF
+     END IF
+  END IF
+END
+   

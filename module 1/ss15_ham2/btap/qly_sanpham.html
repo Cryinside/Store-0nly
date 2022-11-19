@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+    <style>
+        table tr td {
+            border: 1px;
+            margin-top: 500px;
+            text-align: center;
+        }
+        .name{
+            width: 200px;
+            height: 30px;
+        }
+        th{
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+<h1>QUẢN LÝ SẢN PHẨM</h1>
+<input type="text" id="showProduct" placeholder="New product">
+<button onclick="createNewProduct()">ADD</button>
+<button onclick="showAllproduct()">show</button>
+<br>
+<br>
+<p id="sumProduct"></p>
+<table>
+
+    <tbody id="products">
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th> EDIT </th>
+       <th> DELETE </th>
+    </tr>
+    </tbody>
+
+
+
+
+</table>
+<script>
+    let arrProduct=[];
+    function showAllproduct(){
+        let content='';
+        content+='<tr>\n' +
+            '        <th>Tên sản phẩm</th>\n' +
+            '        <th> EDIT </th>\n' +
+            '       <th> DELETE </th>\n' +
+            '<th><span id="sum"></span></th>\n' +
+            '    </tr>'
+        for (let i=0 ; i<arrProduct.length ; i++){
+            content+=' <tr>\n' +
+                '        <td class="name">'+arrProduct[i]+'</td>\n' +
+                '        <td><button onclick="editProduct('+i+')">EDIT</button></td>\n' +
+                '        <td><button onclick="delProduct('+i+')">DEL</button></td>\n' +
+                '    </tr>'
+        }
+        document.getElementById('products').innerHTML=content;
+        document.getElementById('showProduct').value=''
+        document.getElementById('sum').innerText= arrProduct.length +' san pham '
+    }
+    showAllproduct();
+
+    function createNewProduct(){
+        let newP=document.getElementById('showProduct').value;
+        arrProduct.push(newP);
+
+        showAllproduct();
+    }
+    function delProduct(index){
+        arrProduct.splice(index,1);
+        showAllproduct();
+    }
+    function editProduct(index){
+        let newValue=prompt('moi ban nhap ten moi: ');
+        arrProduct[index]=newValue;
+        showAllproduct();
+    }
+</script>
+</body>
+</html>

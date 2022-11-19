@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra số nguyên</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt('nhap n:'));
+    for (let i=0; i<n ; i++){
+        if (kt_snt(i)==1){
+            document.write(i+' ,');
+        }
+    }
+    function kt_snt(n){
+        if (n<2){
+            return 0;
+        }
+       for (let i=2 ; i<= n/2 ; i++){
+           if (n%i==0){
+               return 0;
+           }
+       }
+       return 1
+    }
+</script>
+</body>
+</html>

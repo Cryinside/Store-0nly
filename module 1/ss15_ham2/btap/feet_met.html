@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Move between feet and met</title>
+</head>
+<body>
+feet to Meter
+<input type="number" oninput="feetToMeter(this.value)" onchange="feetToMeter(this.value)">
+<span id="meter"></span>
+<br>
+    Meter to feet
+    <input type="number"  oninput="meterToFeet(this.value)" onchange="meterToFeet(this.value)">
+<span id="feet"></span>
+<script>
+
+    function feetToMeter(feet){
+        feet= parseFloat(feet);
+        document.getElementById('meter').innerHTML= feet*(0.305) +' m '
+    }
+    function meterToFeet(meter){
+        meter= parseFloat(meter);
+        document.getElementById('feet').innerHTML= meter*(3.279) +' ft '
+    }
+</script>
+</body>
+</html>

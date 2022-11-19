@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a39fd0d5-8878-4ace-aa6c-4d8271c4b0ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module 1/ss09_cautruc-dk2/Bai-tap/duongqua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss10_jstl/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss10_jstl/btap/customerList/src/main/java/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss10_jstl/btap/customerList/src/main/java/ServletDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss10_jstl/btap/customerList/src/main/webapp/Display.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/controller/ServletHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/controller/ServletProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/model/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/model/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/model/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/model/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/java/model/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/webapp/View/Product/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/product/src/main/webapp/View/Product/listProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/controller/ServletHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/controller/ServletProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/model/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/model/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/model/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/model/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/java/model/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/webapp/view/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/webapp/view/product/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/webapp/view/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/webapp/view/product/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/btap/productMananement/src/main/webapp/view/product/productList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/controller/ServletCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/controller/ServletHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/model/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/model/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/model/repository/Impl/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/model/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/java/model/service/Impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/listCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/ss11_mvc/thuchanh/customerManage/src/main/webapp/view/customer/thongBao.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/ListBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/ListBankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/RegexAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_NguyenTrungHieu/nganhang/RegexAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/Calculable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/Calculable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/MainStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/MainStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/MathCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/MathCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/MyCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/MyCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitapngoai/TestShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapngoai/TestShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../caseStudy/utils/RegexData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../caseStudy/utils/RegexData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module2/Exam/utils/WriteReadCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module2/Exam/utils/WriteReadCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module2/baitapngoai/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module2/baitapngoai/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/module2/caseStudy/utils/RegexData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/module2/caseStudy/utils/RegexData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_DSA_Stack_Queue/btap/DoiThapPhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_DSA_Stack_Queue/btap/DoiThapPhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/.idea/module3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/.idea/module3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="29kSZkgjtxw7Y5rY5IyX9C7jg12" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../caseStudy" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39fd0d5-8878-4ace-aa6c-4d8271c4b0ea" name="Default Changelist" comment="" />
+      <created>1653655647420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653655647420</updated>
+      <workItem from="1653655648780" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1653655705766">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1653655705766" />
+  </component>
+</project>

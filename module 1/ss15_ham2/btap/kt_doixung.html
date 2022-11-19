@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ip=prompt('nhap vao 1 tu de kt doi xung:');
+     if (isPalindrome(ip)==false){
+         alert('khong phai')
+     }else {
+         alert('phai')
+     }
+    function isPalindrome(s){
+        for (let i=0;i<s.length/2; i++){
+            if (s[i] != s[s.length-i-1]){
+                return false;
+            }
+            return true;
+        }
+        return true;
+
+
+    }
+</script>
+</body>
+</html>

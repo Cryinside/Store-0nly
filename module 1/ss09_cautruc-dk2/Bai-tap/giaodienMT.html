@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MT NANG CAO</title>
+    <style>
+        th{
+            text-align: right;
+
+
+        }
+        table{
+            background-color: #808080;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th,td{
+            width: 100px;
+            height: 100px;
+        }
+        input{
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+        }
+        .item{
+
+            outline: none;
+            border: 0.1px solid rgb(212, 212, 212 );
+        }
+        .item:hover{
+            background-color: rgb(182, 182, 182);
+            cursor: pointer;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<table >
+    <tr>
+        <th colspan="4" style="font-size: 40px" id="kqua"></th>
+    </tr>
+    <tr>
+        <td ><input class="item " type="button" onclick="pressC()" value="C" ></td>
+        <td><input class="item " type="button"  onclick="pressAC()" value="AC" ></td>
+        <td><input class="item " type="button" onclick="pressoperator('/')" value="&#247;" ></td>
+    </tr>
+    <tr>
+        <td><input class="item " type="button" onclick="getValue('7')" value="7" ></td>
+        <td><input class="item " type="button" onclick="getValue('8')" value="8" ></td>
+        <td><input class="item " type="button" onclick="getValue('9')" value="9" ></td>
+        <td><input class="item " type="button" onclick="pressoperator('*')" value="&#215;" ></td>
+    </tr>
+    <tr>
+        <td><input class="item " type="button" onclick="getValue('4')" value="4" ></td>
+        <td><input class="item " type="button" onclick="getValue('5')" value="5" ></td>
+        <td><input class="item " type="button" onclick="getValue('6')" value="6" ></td>
+        <td><input class="item " type="button" onclick="pressoperator('-')" value="&#8722;" ></td>
+    </tr>
+    <tr>
+        <td><input class="item " type="button"   onclick="getValue('1')" value="1" ></td>
+        <td><input class="item " type="button" onclick="getValue('2')" value="2" ></td>
+        <td><input class="item " type="button" onclick="getValue('3')" value="3" ></td>
+        <td><input class="item " type="button" onclick="pressoperator('+')" value="&#43;" ></td>
+    </tr>
+    <tr>
+        <td><input class="item " type="button" ></td>
+        <td><input class="item " type="button" onclick="getValue('0')" value="0" ></td>
+        <td><input class="item " type="button" onclick="getValue('.')" value="." ></td>
+        <td><input class="item " type="button" onclick="run()" value="&#61;"  ></td>
+    </tr>
+</table>
+
+<script>
+
+    let kqua=0;
+    let ketquaDisplay=document.getElementById('kqua');
+    function getValue(number){
+        if (ketquaDisplay === ''){
+            ketquaDisplay.innerHTML=kqua;
+        }else if (kqua === 0) {
+            ketquaDisplay.innerHTML+= number;
+        }else{
+            ketquaDisplay.innerHTML=number;
+            kqua=0;
+        }
+    }
+    function pressoperator(operator){
+
+        ketquaDisplay.innerHTML+=operator;
+        kqua=0;
+    }
+    function run(){
+        kqua=eval(ketquaDisplay.innerHTML);
+        ketquaDisplay.innerHTML=kqua;
+    }
+    function pressC(){
+        ketquaDisplay.innerHTML='';
+        kqua=0;
+    }
+    function pressAC(){
+        let res = ketquaDisplay.innerHTML;
+        ketquaDisplay.innerHTML=res.substring(0, res.length - 1);
+    }
+
+
+
+</script>
+</body>
+</html>

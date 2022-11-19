@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HIEN THI DAU RA</title>
+</head>
+<body>
+
+<!--bai tap 1: Hien thi ket qua dung ham alert() -->
+
+<button type="button" onclick="showMessage()">Click me!</button>
+<script>
+    function showMessage(){
+        alert('XIN CHAO');
+    }
+</script>
+<br>
+<br>
+
+<!--bai tap 2: Hien thi ket qua dung ham  document.getElementById -->
+
+<div id ="mesdiv"></div>
+<button type="button" onclick="show_innerhtml()">Click me!</button>
+<script>
+    function show_innerhtml(){
+        document.getElementById('mesdiv').innerHTML='XIN CHỒ';
+    }
+</script>
+<br>
+<br>
+
+<!--bai tap 3: hien thi ket qua dung document.write -->
+
+<button type="button" onclick="show_new()">Click tôi!</button>
+<script>
+    function show_new(){
+        document.write('XIN CHÀO!');
+    }
+</script>
+<br>
+<br>
+
+<!--bai tap 4: hien thi ket qua dung console.log -->
+
+<button type="button" onclick="show_console()">Click tôi!</button>
+<script>
+    function show_console(){
+        console.log('NI HẢO!');
+    }
+</script>
+</body>
+</html>

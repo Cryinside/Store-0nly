@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="825cc6be-7826-4aad-82c8-8f74162f0efc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module5/caseStudy/employee/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/caseStudy/employee/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/caseStudy/employee/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/META-INF/module2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/out/production/module2/META-INF/module2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/exam2/src/main/java/exam2/validate/KhuyenMaiValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/exam2/src/main/java/exam2/validate/KhuyenMaiValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss05/thuchanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss05/thuchanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss09/thuchanh/customer/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss09/thuchanh/customer/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module5/caseStudy/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module5/caseStudy/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module5/ss03/baitap/color-picker/src/app/color/color.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module5/ss03/baitap/color-picker/src/app/color/color.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module5/ss03/baitap/color-picker/src/app/color/color.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../module5/ss03/baitap/color-picker/src/app/color/color.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Aeq50tZnPkGwE1opb3cx1fjDZr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.CopyFile">
+    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_IO_TextFile.btap.CopyFile" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss16_IO_TextFile.btap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss04_ClassObject_java.btap.MainFan" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss04_ClassObject_java.btap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_String_Regex.btap.demo" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss19_String_Regex.btap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="825cc6be-7826-4aad-82c8-8f74162f0efc" name="Default Changelist" comment="" />
+      <created>1655380211337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655380211337</updated>
+      <workItem from="1655380212707" duration="1819000" />
+      <workItem from="1656739787661" duration="32000" />
+      <workItem from="1661475557445" duration="1270000" />
+      <workItem from="1661480420489" duration="32000" />
+      <workItem from="1661480485635" duration="156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1661476238048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1661476238048" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1661480469212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1661480469212" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1661480469212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1661480469212" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1661480469212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1661480469212" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1661480469212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1661480469212" />
+  </component>
+</project>

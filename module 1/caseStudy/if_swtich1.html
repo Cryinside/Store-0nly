@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary=parseInt(prompt('nhập số tiền thu nhập 1 tháng: '));
+    var res;
+    if (salary<4000000){
+        alert('ban khong can nop thue ')
+    }else {
+        if (salary==15000000){
+             res=(salary*20)/100;
+        }else if (7000000<salary<15000000){
+            res=(salary*15)/100;
+        }else if (salary<7000000){
+            res=(salary*5)/100;
+        }
+        alert('thuế bạn phải nộp: '+res);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 02</title>
+    <style>
+        .btn{
+            text-align: center;
+        }
+        #start{
+            width: 90px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--bai1
+<script>
+    let n=parseInt(prompt('nhap n: '));
+    let f0 =0, f1=1, fn;
+    for (let i = 0 ; i < n ; i++){
+        if (n <= 1){
+            fn = i;
+        }else {
+            fn=f0+f1;
+            f0=f1;
+            f1=fn;
+        }
+        document.write(fn + ' ,')
+    }
+</script>
+-->
+
+
+<!--bai2
+<script>
+let num=parseInt(prompt('nhap n nguyen duong:'));
+let giaithua=1;
+for (let i=1 ; i<=num ; i++){
+    giaithua*=i;
+}
+document.write('Giai thừa của '+num+' là: '+giaithua);
+</script>
+-->
+
+<!--bai3
+<script>
+    let num=parseInt(prompt('nhap n :'));
+    for (let i=1 ; i<=num ; i++){
+        for (let j=1 ; j<=i ; j++){
+            document.write('* ');
+
+        }
+        document.write('<br> ');
+    }
+    document.write('<br>');
+</script>
+<hr>
+<br>
+-->
+
+<!--bai4
+<script>
+    let num=parseInt(prompt('nhap n :'));
+    for (let i=1 ; i<=num ; i++){
+        for (let j=num ; j>=i ; j--){
+            document.write('* ');
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+</script>
+-->
+
+
+<!--bai5-->
+<!--<script>-->
+<!--    let num=parseInt(prompt('nhap n :'));-->
+<!--    for (let i=1 ; i<=num ; i++){-->
+<!--        for (let j=1 ; j<=num ; j++){-->
+<!--            if (j <= num - i){-->
+<!--                document.write("&nbsp;&nbsp;&nbsp;");-->
+<!--            }else {-->
+<!--                document.write(" * ");-->
+<!--            }-->
+<!--        }-->
+<!--        document.write(" <br> ");-->
+<!--    }-->
+
+<!--</script>-->
+
+
+
+<!--bai6-->
+<script>
+    let num=parseInt(prompt('nhap n :'));
+    for (let i=num ; i>=1 ; i--){
+        for (let j=1; j<=num ; j++){
+            if (j <= num - i){
+                document.write(" &nbsp;&nbsp; ");
+            }else {
+                document.write(" * ");
+            }
+        }
+        document.write(" <br> ");
+    }
+</script>
+
+
+
+<!--<script>-->
+<!--    let num=parseInt(prompt('nhap n :'));-->
+<!--    for (let i=1 ; i <= num ; i++) {-->
+<!--        if (i ==num || i==1){-->
+<!--            for (let j=1 ; j<=num ; j++){-->
+<!--                document.write(" * ");-->
+<!--            }-->
+<!--        }else {-->
+<!--            document.write(" * ");-->
+<!--            for (let j=1;j<=num-2;j++){-->
+<!--                document.write(" &nbsp;&nbsp; ");-->
+<!--            }-->
+<!--            document.write(" * ");-->
+<!--        }-->
+<!--        document.write(" <br> ");-->
+<!--    }-->
+<!--</script>-->
+
+
+
+<!--bai1-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td>Họ và tên:</td>-->
+<!--        <td>-->
+<!--            <input type="text" id="user">-->
+<!--            <label for="user"></label>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Số tiền vay:</td>-->
+<!--        <td>-->
+<!--            <input type="text" id="debt">-->
+<!--            <label for="debt"></label>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Lãi suất:</td>-->
+<!--        <td>-->
+<!--            <input type="text" id="interest_rate">-->
+<!--            <label for="interest_rate"></label>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Thời gian vay:</td>-->
+<!--        <td>-->
+<!--            <input type="text" id="time">-->
+<!--            <label for="time"></label>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr class="btn">-->
+<!--        <td colspan="2"><input type="button" id="start" value="Start" onclick="tinhlai()">-->
+<!--            <label for="start"></label></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<br>-->
+<!--<h3 id="sum"></h3>-->
+<!--<h3 id="sum1"></h3>-->
+<!--<h3 id="sum2"></h3>-->
+<!--<h3 id="sum3"></h3>-->
+<!--<script>-->
+<!--    let ten=document.getElementById('user');-->
+<!--    let sotien=document.getElementById('debt') ;-->
+<!--    let lai=document.getElementById('interest_rate') ;-->
+<!--    let time=document.getElementById('time');-->
+<!--    function tinhlai(){-->
+<!--        let hoten=ten.value;-->
+<!--        let tienvay=sotien.value;-->
+<!--        let laisuat=lai.value;-->
+<!--        let tiengoctrahangthang=parseFloat(sotien.value)/parseFloat(time.value);-->
+<!--        let laihangthang=(parseFloat(sotien.value)*(parseFloat(lai.value)/100)/(parseFloat(time.value)));-->
+<!--        let tientrahangthang=tiengoctrahangthang+laihangthang;-->
+<!--        document.getElementById('sum').innerText='A/c '+hoten+ ' vay '+tienvay+' triệu đồng với mức lãi suất là '+laisuat+' /01 năm'-->
+<!--        document.getElementById('sum1').innerText='Số tiền gốc phải trả ngân hàng hằng tháng là: '+tiengoctrahangthang;-->
+<!--        document.getElementById('sum2').innerText='Số lãi phải trả ngân hàng hằng tháng là: '+laihangthang;-->
+<!--        document.getElementById('sum3').innerText='Số tiền phải trả hằng tháng là: '+tientrahangthang-->
+<!--    }-->
+<!--</script>-->
+<!--<hr>-->
+<!--<br>-->
+
+
+
+<!--<script>-->
+<!--    document.write('*************************<br>')-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write(' 0 0 0 ');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write(' 0 0 0 ');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('0 0 0 0 0 0 0 0 0 0');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;');-->
+<!--    document.write('0 0 0 0 0 0 0 0 0 0 0');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;');-->
+<!--    document.write('0 0 0 0 0 0 0 0 0 0 0');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('0 0 0 0 0 0 0 0 0 0');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write(' 0 0 0 0 0 0 0 ');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write(' 0 0 0 0 0 ');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('0 0 0')-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+<!--    document.write('***');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('0');-->
+<!--    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');-->
+<!--    document.write('***<br>');-->
+
+
+<!--</script>-->
+
+</body>
+</html>
